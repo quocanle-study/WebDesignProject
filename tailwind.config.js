@@ -2,8 +2,11 @@
 export default {
   content: [
     "./index.html",
+    "./shop-v2.html",
     "./shop.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./contact.html",
+    "./index-v2.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
