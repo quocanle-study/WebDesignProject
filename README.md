@@ -2,9 +2,12 @@
 
 This repository is the foundation for the LBJ online shop, a captivating platform designed to showcase and sell exquisite jewelry for discerning men.
 
+Our Production: 
+[lequocan.eu.org](http://lequocan.eu.org)
+
 ## Table of Content
-[Wireframe details](#Wireframe-details)
-[Planning](#Planning)
+- [Wireframe details](#Wireframe-details)
+- [Planning](#Planning)
 
 ### Wireframe details
 
