@@ -1,20 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <header class="flex flex-row items-center justify-between border-b-2 bg-white">
-        <a href="#"> LBJ </a>
-  
-        <ul class="flex flex-row gap-10">
-          <li class="border-b-2 border-blue-900 p-4"><a>Shop</a></li>
-          <li class="p-4"><a>About Us</a></li>
-        </ul>
-      </header>
+  </head>
+  <body>
+    <header
+      class="flex flex-row items-center justify-between border-b-2 bg-white"
+    >
+      <a href="#"> LBJ </a>
 
-      <script type="module" src="/src/scripts/main.js"></script>
-</body>
+      <ul class="flex flex-row gap-10">
+        <li class="border-b-2 border-blue-900 p-4"><a>Shop</a></li>
+        <li class="p-4"><a>About Us</a></li>
+      </ul>
+    </header>
+
+    <div class="p-10"></div>
+
+    <footer class="pt-5 border-t-2">
+      <div class="flex flex-row items-center justify-between bg-white pb-5 ">
+        <ul class="flex flex-row gap-10">
+          <li>CONTACT</li>
+          <li>TERMS OF SERVICES</li>
+          <li>SHIPPING AND RETURNS</li>
+        </ul>
+        <div class="border-b-2 pb-5">
+          <input
+            type="email"
+            id="emailInput"
+            placeholder="Give an email, get the newsletter."
+            class="pr-3"
+          />
+          <button class="shrink-0 self-start">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=7a8be1ef8e724487a3a72840cedf3b54&"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="flex flex-row items-center justify-between bg-white">
+        <div class="flex-auto">
+          <span class="text-gray-500">© 2024 LBJ. </span>Terms of use
+          <span class="text-gray-500">and</span> privacy policy.
+        </div>
+
+        <ul class="flex flex-row gap-10">
+          <li>
+            <a href="#">
+              <img src="" alt="fb" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="" alt="ig" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="" alt="tw" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
 </html>
