@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/font/boxicons-2.1.4/boxicons-2.1.4/css/boxicons.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    html {
+        height: 2000px;
+    }
+    body {
+      font-family: "DM Sans", sans-serif;
+    }
+</style>
+<body>
+    <header class="flex gap-5 justify-between items-start w-4/5 max-md:flex-wrap max-md:max-w-full ml-auto mr-auto mt-6">
+        <h1 class="text-4xl leading-10 text-stone-950">
+          L<span class="text-neutral-950">B</span><span class="text-stone-950">J</span>
+        </h1>
+        <nav class="flex gap-5 justify-between px-px mt-4 text-base leading-7 text-black">
+          <a href="#" class="my-auto">Shop</a>
+          <a href="#" class="my-auto">About Us</a>
+          <div class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px]"></div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="icon 1" class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="icon 2" class="shrink-0 self-start aspect-square w-[21px]" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="icon 3" class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[1px] stroke-white w-[21px]" />
+        </nav>
+      </header>
+      <div class="flex gap-0 mt-6 w-4/5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full ml-auto mr-auto mb-16">
+        <div class="flex-auto h-0.5 border border-solid bg-zinc-300 border-zinc-300 max-md:max-w-full"></div>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/684eb458181008f29db085bb636b1598ca0d6cdc8721057ed22bb422c80a6912?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="decorative" class="shrink-0 w-10 border-2 border-black border-solid aspect-[20] stroke-[2px] stroke-black" />
+      </div>
+      <div class="flex w-4/5 ml-auto mr-auto">
+        <div class="space-y-10 ">
+            <div class="bg-black w-32 h-32 rounded-lg"></div>
+            <div class="bg-blue-50 w-32 h-32 rounded-lg"></div>
+            <div class="bg-red-600 w-32 h-32 rounded-lg"></div>
+            <div class="bg-cyan-300 w-32 h-32 rounded-lg"></div>
+        </div>
+            <div class="bg-gray-800 min-w-[600px] max-h-[630px] ml-10 rounded-lg"></div>
+            <div class="flex flex-col min-w-[415px] max-h-[630px] ml-8 rounded-lg">
+              <span class="text-2xl">Product</span>
+              <span class="mt-6 mb-14 text-[#A18A68]">£30.00 – £39.99</span>
+              <span class="mb-5 text-[#707070]">
+                <div>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                  <i class='bx bxs-star' ></i>
+                </div>4 customer reviews</span>
+              <span class="text-[#707070]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente porro, aut velit perferendis itaque explicabo necessitatibus corporis! Voluptatibus commodi assumenda fuga incidunt sapiente? Quod eaque vel laboriosam aliquam. Minus.</span>
+              <div class="flex mt-11">
+                <span class="mr-8 font-medium">Color</span>
+                <select class="border-b-2 border-zinc-300 min-w-[340px]">
+                  <option value="choose">Choose an option</option>
+                  <option value="gold">Gold</option>
+                  <option value="silver">Silver</option>
+                </select>
+              </div>
+              <div class="flex mt-8">
+                <span class="mr-3 font-medium">Material</span>
+                <select class="border-b-2 border-zinc-300 min-w-[340px]">
+                  <option value="choose">Choose an option</option>
+                  <option value="gold">Gold</option>
+                  <option value="silver">Silver</option>
+                </select>
+              </div>
+              <div class="flex mt-10">
+                <form action="/action_page.php">
+                  <input type="number" id="quantity" name="quantity" min="1" max="99" class="bg-[#e6e6e6] w-11 h-11 text-center rounded-md">
+                </form>
+                <button class="min-w-[345px] ml-6 text-center border-2 font-medium text-[#909090] border-[#909090] rounded-md hover:bg-[#808080] hover:text-[#ffffff]">ADD TO CART</button>
+              </div>  
+              <div class="flex flex-col mt-6">
+                <label>SKU: <span class="text-[#909090]">E001-00</span></label>
+                <label>Category: <a href="#" class="text-[#909090]">Gold</a></label>
+                <label>Tag: <a href="#" class="text-[#909090]">Gold</a></label>
+              </div>
+            </div>
+      </div>
+      <div class="flex w-4/5 ml-auto mr-auto mt-3">
+        <div class="ml-[10.50rem] w-[600px] border-t-2 border-zinc-300"></div>
+      </div>
+      <div class="w-4/5 ml-auto mr-auto mt-40">
+        <ul class="flex gap-x-14 text-xl">
+          <li class="pb-7">Description</li>
+          <li class="pb-7 text-[#909090]">Additional information</li>
+          <li class="pb-7 text-[#909090]">Reviews (4)</li>
+        </ul>
+      </div>
+      <div class="flex gap-0 w-4/5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full ml-auto mr-auto mb-6">
+        <div class="flex-auto h-0.5 border border-solid bg-zinc-300 border-zinc-300 max-md:max-w-full"></div>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/684eb458181008f29db085bb636b1598ca0d6cdc8721057ed22bb422c80a6912?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="decorative" class="shrink-0 w-10 border-2 border-black border-solid aspect-[20] stroke-[2px] stroke-black" />
+      </div>
+      <div class="w-4/5 ml-auto mr-auto">
+        <label for="" class="text-[#909090]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, ea? Sunt dolor maxime recusandae consequatur! Libero maxime, corrupti quia magni ratione, eligendi fugiat dolorem beatae, voluptas corporis adipisci eos dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Incidunt unde iure praesentium voluptas, repellendus architecto animi id sed beatae dignissimos ex dicta a. In distinctio praesentium, magni vero eligendi mollitia.</label>
+      </div>
+      <div class="w-4/5 ml-auto mr-auto mt-28 ">
+          <label class="text-3xl">Related products</label>
+          <div class="flex gap-8">
+            <div class="flex flex-col mt-14">
+              <div class="bg-gray-400 w-96 h-96 rounded-lg"></div>
+              <span class="text-xl my-4">Product</span>
+              <span class="text-xl text-[#A18A68]">£30.00</span>
+            </div>
+            <div class="flex flex-col mt-14">
+              <div class="bg-gray-400 w-96 h-96 rounded-lg"></div>
+              <span class="text-xl my-4">Product</span>
+              <span class="text-xl text-[#A18A68]">£30.00</span>
+            </div>
+            <div class="flex flex-col mt-14">
+              <div class="bg-gray-400 w-96 h-96 rounded-lg"></div>
+              <span class="text-xl my-4">Product</span>
+              <span class="text-xl text-[#A18A68]">£30.00</span>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+</body>
+</html>
