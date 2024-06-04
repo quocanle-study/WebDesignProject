@@ -10,7 +10,7 @@ This repository is the foundation for the LBJ online shop, a captivating platfor
 
 ##### Home Page
 
-![Home Page](content\wireFrame\homePage.jpg)
+![Home Page](content/wireFrame/homePage.jpg)
 
 - The home page serves as the entry point for users
   - A prominent header with the site logo, navigation menu, and search bar.
@@ -21,14 +21,14 @@ This repository is the foundation for the LBJ online shop, a captivating platfor
   
 ##### Shop Page (Category/Product Listing)
 
-![Shop Page](content\wireFrame\shopPage.jpg)
+![Shop Page](content/wireFrame/shopPage.jpg)
 - This page displays product categories or a list of products.
   - Filter options (e.g., by category, price range).
   - Product cards with images, names, prices, and quick details.
 
 ##### Product Page
 
-![Product Page](content\wireFrame\productPage.jpg)
+![Product Page](content/wireFrame/productPage.jpg)
 
 - The product page provides detailed information about a specific product. 
   - Product image.
@@ -39,7 +39,7 @@ This repository is the foundation for the LBJ online shop, a captivating platfor
 
 ##### About Us Page
 
-![About Us Page](content\wireFrame\aboutUsPage.jpg)
+![About Us Page](content/wireFrame/aboutUsPage.jpg)
 
 - This page shares the brand’s story, mission, and values
   - About us section.
@@ -49,14 +49,15 @@ This repository is the foundation for the LBJ online shop, a captivating platfor
 
 ##### Contact Us Page
 
-![Contact Us Page](content\wireFrame\contactUsPage.jpg)
+![Contact Us Page](content/wireFrame/contactUsPage.jpg)
 
 - A Contact Us page allow visitors to reach out to our business
     - Contact Information
     - Contact Form
     - Social Media Links
 
-### Planning (latest update 04/06/2024)
+### Planning 
+(latest update 04/06/2024)
 
 #### User Interface (UI) Development
 
