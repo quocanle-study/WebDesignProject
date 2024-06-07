@@ -7,6 +7,7 @@ export default defineConfig({
         main: 'index.html',
         shop: 'shop.html',
         product: 'product.html',
+        about: 'about.html',
       },
     },
   },
