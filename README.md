@@ -1,91 +1,62 @@
 # LBJ (Luxury Boys Jewelry) Online Shop
 
-This repository is the foundation for the LBJ online shop, a captivating platform designed to showcase and sell exquisite jewelry for discerning men.
+## Overview
+Welcome to the **LBJ (Luxury Boys Jewelry) Online Shop**. This is a high-end e-commerce platform designed to offer an exclusive selection of jewelry. Our mission is to provide a seamless shopping experience for those who seek luxury and elegance.
 
-Our Production: 
+## Technologies
+This project is built with robust and modern technologies to ensure high performance and scalability:
+- **Node.js**: A JavaScript runtime environment that executes JavaScript code outside of a web browser.
+- **Express.js**: A web application framework for Node.js, designed for building web applications and APIs.
+- **Tailwind CSS**: A utility-first CSS framework for creating custom designs without leaving your HTML.
+- **Vite**: A modern frontend build tool that provides a fast and lean development experience.
+
+## Our Production: 
 [lequocan.eu.org](http://lequocan.eu.org)
 
-## Table of Content
-- [Wireframe details](#Wireframe-details)
-- [Planning](#Planning)
+## Detail of the project
+- [Wireframe](content/wireFrame/README.md)
+- [Planning](content/Planning/README.md)
+- [Task](content/Task/README.md)
 
-### Wireframe details
+## Setup
 
-##### Home Page
+### Prerequisites
+- Ensure you have Node.js installed on your system.
 
-![Home Page](content/wireFrame/homePage.jpg)
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/quocanle-study/WebDesignProject.git
 
-- The home page serves as the entry point for users
-  - A prominent header with the site logo, navigation menu, and search bar.
-  - Featured products or promotions.
-  - Categories or product sections.
-  - Testimonials or social proof.
-  - Footer with contact information and links.
-  
-##### Shop Page (Category/Product Listing)
+2. Navigate to the project directory:
+    ```bash
+    cd WebDesignProject
 
-![Shop Page](content/wireFrame/shopPage.jpg)
-- This page displays product categories or a list of products.
-  - Filter options (e.g., by category, price range).
-  - Product cards with images, names, prices, and quick details.
+3. Install dependencies:
+    ```bash
+    npm install
 
-##### Product Page
+### Development
+* Run the development server:
+    ```bash
+    npm run dev
 
-![Product Page](content/wireFrame/productPage.jpg)
+Open http://localhost:5173 to view it in the browser.
 
-- The product page provides detailed information about a specific product. 
-  - Product image.
-  - Product name, description, and price.
-  - Additional images or image gallery.
-  - Add to cart button.
-  - Reviews and ratings.
+### Deployment
 
-##### About Us Page
+* Build the application for production:
+    ```bash
+    npm run build
 
-![About Us Page](content/wireFrame/aboutUsPage.jpg)
+Deploy the production build to your preferred hosting service.
 
-- This page shares the brand’s story, mission, and values
-  - About us section.
-  - Brand history or timeline.
-  - Team members or founders.
-  - Visual elements (images, videos).
+### Contributors
 
-##### Contact Us Page
+1. quocanle - Lê Quốc Ân
+2. VinhPham131 - Phạm Quang Vinh
+3. comeheretnt - Phạm Nguyễn Huy Minh
+4. nhannguyen1208 - Nguyễn Minh Nhân
 
-![Contact Us Page](content/wireFrame/contactUsPage.jpg)
-
-- A Contact Us page allow visitors to reach out to our business
-    - Contact Information
-    - Contact Form
-    - Social Media Links
-
-### Planning 
-(latest update 04/06/2024)
-
-#### User Interface (UI) Development
-
-##### 1. Home Page (Assign to Quoc An):
-
-* Task 1.1: Create a HomePage component.
-* Task 1.2: Design the layout using Tailwind CSS classes for elements like header, hero section, product categories, and featured items..
-
-##### 2. Shop Page (Assign to Quang Vinh):
-
-* Task 2.1: Create a ShopPage component.
-* Task 2.2: Develop a product listing layout with filtering options.
-* Task 2.3: Design individual product cards displaying product image, name, price.
-
-##### 3. Product Page (Assign to Huy Minh):
-
-* Task 3.1: Create a ProductPage component.
-* Task 3.2: Display detailed product information like description, specifications, images, and reviews.
-
-##### 4. About Us Page (Assign to Minh Nhan):
-
-* Task 4.1: Create an AboutUsPage component.
-* Task 4.2: Design the page layout with information about the shop, its mission, and team.
-
-##### 5. Contact Us Page:
-
-* Task 5.1: Create a ContactUsPage component.
-* Task 5.2: Develop a contact form with input fields for name, email, message, and a submit button.
+### Contact
+* Email: an.le22020016@vnuk.edu.vn
