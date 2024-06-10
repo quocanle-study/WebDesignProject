@@ -4,7 +4,8 @@ export default {
     "./index.html",
     "./shop.html",
     "./contact.html",
-    "/product.html",
+    "./product.html",
+    "./about.hmtl",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
