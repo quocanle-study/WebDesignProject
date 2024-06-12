@@ -15,47 +15,73 @@
   </style>
 
   <body>
-    <header
-      class="flex flex-row items-center justify-between border-b-2 bg-white mx-5 my-5 mb-9"
-    >
-      <a href="index.html">
-        <div class="text-4xl leading-10 text-stone-950 ml-20">
-          <span class="text-[#a28b68]">L</span
-          ><span class="text-neutral-950">B</span
-          ><span class="text-stone-950">J</span>
-        </div>
+    <!-- Navigation Bar -->
+  <header class="flex flex-row justify-between border-b-2 bg-white mx-5 my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 " >
+    <div class="flex flex-row mt-1 ml-2 tablet:hidden ">
+      <a href="#">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="size-7" />
       </a>
-      <div class="flex flex-row">
-        <ul class="flex flex-row gap-8">
-          <li class="p-4"><a href="shop.html">Shop</a></li>
-          <li class="p-4"><a href="about.html">About Us</a></li>
-        </ul>
-        <div class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10">
-        </div>
-        <div class="flex flex-row p-4 gap-10">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-            alt="Image description"
-            class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-            alt="Image description"
-            class="shrink-0 self-start aspect-square w-[21px]"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-            alt="Image description"
-            class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white"
-          />
-        </div>
+    </div>
+    <a href="index.html">
+      <div class="text-4xl leading-10 text-stone-950 ml-20 phone:max-tablet:ml-0 phone:max-tablet:mb-5">
+        <font color="#a28b68">L</font><span class="text-neutral-950">B</span
+        ><span class="tetx-stone-950">J</span>
       </div>
-    </header>
+    </a>
+    <div class="relative tablet:hidden">
+      <div class="menu-open-btn phone:max-tablet:mb-5 ">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>                
+        </a>
+      </div>
+      <nav class=" offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-auto">
+        
+        <a href="#" class="menu-close-btn absolute top-6 left-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>  
+        </a>
+          <ul class="flex flex-col mt-16">
+                      
+            <il class="my-5"><a href="shop.html" class="text-xl font-semibold hover:text-red-500 duration-300" >Shop</a></il>
+            <il class="my-5"><a href="about.html" class="text-xl font-semibold hover:text-red-500 duration-300" >About Us</a></il>
+            <il class="my-5"><a href="#" class="text-xl font-semibold hover:text-red-500 duration-300" >Cart</a></il>
+          </ul>
+        
+      </nav>
+    </div>
+    
+    <div class="flex flex-row phone:max-tablet:hidden">
+      
+      <ul class="flex flex-row gap-8">
+        <li class="border-b-2 border-black p-4"><a href="shop.html">Shop</a></li>
+        <li class="p-4"><a href="about.html">About Us</a></li>
+      </ul>
+      <div class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"></div>
+      <div class="flex flex-row p-4 gap-10 ">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start aspect-square w-[21px]" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white" />
+      </div>
+    </div>
+  </header>
+  <!-- Navigation Bar -->
 
-    <div class="slideshow-container max-w-1000 relative my-10 mx-5 ">
+    <div>
+      <img
+          src="https://file.hstatic.net/200000103143/file/hero-module-2880-x-1040_a09ac3b897304bd18a9d2c5f1b97c268.jpg"
+          class="w-full"
+          alt="Image 1"
+        />
+        <div
+          class="text text-white text-center bg-opacity-60 bg-black p-2 phone:max-tablet:hidden absolute bottom-8 w-full"
+        >
+          Red Velvet x PANDORA
+        </div>
+    </div>
+    <div class="slideshow-container max-w-1000 relative my-10 mx-5 phone:max-tablet:hidden  ">
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade phone:w-full tablet:w-full">
         <div class="numbertext"></div>
@@ -129,9 +155,9 @@
   
       <!-- Product Grid -->
       <section class="grid justify-items-center phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4">
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product.html">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-[12px] text-center desktop:text-[18px]">         
@@ -139,9 +165,9 @@
             </h4>
           </a>
         </div>
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product.html">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-center text-[12px] desktop:text-[18px]">
@@ -149,9 +175,9 @@
             </h4>
           </a>
         </div>
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-[12px] text-center desktop:text-[18px]">         
@@ -159,9 +185,9 @@
           </h4>          
         </a>
         </div>
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product.html">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-[12px] text-center desktop:text-[18px]">         
@@ -169,9 +195,9 @@
           </h4>          
         </a>
         </div>
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product.html">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-[12px] text-center desktop:text-[18px]">         
@@ -179,9 +205,9 @@
           </h4>          
         </a>
         </div>
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product.html">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-[12px] text-center desktop:text-[18px]">         
@@ -189,9 +215,9 @@
           </h4>          
         </a>
         </div>
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product.html">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-[12px] text-center desktop:text-[18px]">         
@@ -199,9 +225,9 @@
           </h4>          
         </a>
         </div>
-        <div class="mb-32 phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
           <a href="product.html">
-            <div class="bg-red rounded phone:h-[213px] phone:w-[213px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
+            <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[350px] laptop:w-[350px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
             </div>
             <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
             <h4 class="text-[12px] text-center desktop:text-[18px]">         
@@ -212,47 +238,48 @@
       </section>
     </main>
 
-    <footer class="grid border-t-2 mt-60">
-  
-      <section class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex">
-        <div class="flex gap-5 mt-10 phone:flex-col">
-          <div>
-            <a href="" class="text-gray-500 mr-10">CONTACT</a>
-            <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
-            <a href="" class="text-gray-500 mr-10">SHIPPING AND RETURNS</a>
-          </div>
-      </div>
-          <div class="border-b-2 border-black">
-            <div class="flex justify-between gap-20 mt-7 mb-2">
-              <input class="text-black" type="text" placeholder="Give an email, get the newsletter."></input>
-              <img 
-              class="cursor-pointer" 
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" />
-            </div>
-          </div>
-      </section>
-      <section class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10 ">
+    <!-- Footer -->
+  <footer class="grid border-t-2 mt-60 phone:max-tablet:justify-center">
+    <section class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex">
+      <div class="flex gap-5 mt-10 phone:flex-col">
         <div>
-          © 2024 LBJ.
-          <a href="#" class="text-gray-500">Terms of use</a>
-          and
-          <a href="#" class="text-gray-500">Privacy Policy</a>
+          <a href="" class="text-gray-500 mr-10">CONTACT</a>
+          <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
+          <a href="" class="text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
         </div>
-        <div class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0">
-          <a href="#">
-            <img class="size-[15px]" src="/asset/linkedin-big-logo.png" alt="In Icon">
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100006106118260" target="_blank">
-            <img class="size-[15px]" src="/asset/facebook (1).png" alt="Facebook Icon">
-          </a>
-          <a href="#">
-            <img class="size-[15px]" src="/asset/instagram.png" alt="Instagram Icon">
-          </a>
-          <a href="#">
-            <img class="size-[15px]" src="/asset/twitter.png" alt="Twitter Icon">
-          </a>
-      </section>
-    </footer> 
+    </div>
+        <div class="border-b-2 border-black">
+          <div class="flex justify-between gap-20 mt-7 mb-2">
+            <input class="text-black" type="text" placeholder="Give an email, get the newsletter."></input>
+            <img 
+            class="cursor-pointer" 
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" />
+          </div>
+        </div>
+    </section>
+    <section class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10 ">
+      <div>
+        © 2024 LBJ.
+        <a href="#" class="text-gray-500">Terms of use</a>
+        and
+        <a href="#" class="text-gray-500">Privacy Policy</a>
+      </div>
+      <div class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0 phone:max-tablet:justify-center">
+        <a href="#">
+          <img class="size-[15px]" src="/asset/linkedin-big-logo.png" alt="In Icon">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100006106118260" target="_blank">
+          <img class="size-[15px]" src="/asset/facebook (1).png" alt="Facebook Icon">
+        </a>
+        <a href="#">
+          <img class="size-[15px]" src="/asset/instagram.png" alt="Instagram Icon">
+        </a>
+        <a href="#">
+          <img class="size-[15px]" src="/asset/twitter.png" alt="Twitter Icon">
+        </a>
+    </section>
+  </footer> 
+  <!-- Footer -->
 
     <script>
       // Slideshow javascript
@@ -288,6 +315,19 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
       }
+      const menuOpenBtn =   document.querySelector('.menu-open-btn');
+      const menuCloseBtn = document.querySelector('.menu-close-btn');
+      const offCanvasMenu = document.querySelector('.offcanvas-menu');
+
+      menuCloseBtn.addEventListener('click', function(){
+        offCanvasMenu.classList.remove('translate-x-0');
+        offCanvasMenu.classList.add('translate-x-full');
+
+      });
+      menuOpenBtn.addEventListener('click', function(){
+        offCanvasMenu.classList.remove('translate-x-full');
+        offCanvasMenu.classList.add('translate-x-0');
+      });
     </script>
 
     <script type="module" src="/src/scripts/main.js"></script>
