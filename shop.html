@@ -14,126 +14,59 @@
   }
 </style>
 <body>
-
   <!-- Navigation Bar -->
-  <header
-  class="flex flex-row col justify-between border-b-2 bg-white mx-5 my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0"
->
-  <div class="flex flex-row mt-1 ml-2 tablet:hidden">
-    <a href="#">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-        alt="Image description"
-        class="size-7"
-      />
-    </a>
-  </div>
-  <a href="index.html">
-    <div
-      class="text-4xl leading-10 text-stone-950 ml-20 phone:max-tablet:ml-0 phone:max-tablet:mb-5"
-    >
-      <font color="#a28b68">L</font><span class="text-neutral-950">B</span
-      ><span class="tetx-stone-950">J</span>
-    </div>
-  </a>
-  <div class="relative tablet:hidden">
-    <div class="menu-open-btn phone:max-tablet:mb-5">
+  <header class="flex flex-row col justify-between border-b-2 bg-white my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 " >
+    <div class="flex flex-row mt-1 ml-2 tablet:hidden ">
       <a href="#">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-8"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="size-7" />
       </a>
     </div>
-    <nav
-      class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-20 translate-x-full"
-    >
-      <a href="#" class="menu-close-btn absolute top-6 left-6">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M6 18 18 6M6 6l12 12"
-          />
-        </svg>
-      </a>
-      <ul class="flex flex-col mt-16">
-        <il class="my-5"
-          ><a
-            href="shop.html"
-            class="text-xl font-semibold hover:text-red-500 duration-300"
-            >Shop</a
-          ></il
-        >
-        <il class="my-5"
-          ><a
-            href="about.html"
-            class="text-xl font-semibold hover:text-red-500 duration-300"
-            >About Us</a
-          ></il
-        >
-        <il class="my-5"
-          ><a
-            href="#"
-            class="text-xl font-semibold hover:text-red-500 duration-300"
-            >Cart</a
-          ></il
-        >
+    <a href="index.html">
+      <div class="text-4xl leading-10 text-stone-950 phone:max-tablet:ml-0 phone:max-tablet:mb-5">
+        <font color="#a28b68">L</font><span class="text-neutral-950">B</span
+        ><span class="tetx-stone-950">J</span>
+      </div>
+    </a>
+    <div class="relative tablet:hidden">
+      <div class="menu-open-btn phone:max-tablet:mb-5 ">
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>                
+        </a>
+      </div>
+      <nav class=" offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-auto">
+        
+        <a href="#" class="menu-close-btn absolute top-6 left-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>  
+        </a>
+          <ul class="flex flex-col mt-16">
+                      
+            <il class="my-5"><a href="shop.html" class="text-xl font-semibold hover:text-red-500 duration-300" >Shop</a></il>
+            <il class="my-5"><a href="about.html" class="text-xl font-semibold hover:text-red-500 duration-300" >About Us</a></il>
+            <il class="my-5"><a href="#" class="text-xl font-semibold hover:text-red-500 duration-300" >Cart</a></il>
+          </ul>
+        
+      </nav>
+    </div>
+    
+    <div class="flex flex-row phone:max-tablet:hidden">
+      
+      <ul class="flex flex-row gap-8">
+        <li class="border-b-2 border-black p-4"><a href="shop.html">Shop</a></li>
+        <li class="p-4 "><a href="about.html">About Us</a></li>
       </ul>
-    </nav>
-  </div>
-
-  <div class="flex flex-row phone:max-tablet:hidden">
-    <ul class="flex flex-row gap-8">
-      <li class="border-b-2 border-black p-4">
-        <a href="shop.html">Shop</a>
-      </li>
-      <li class="p-4"><a href="about.html">About Us</a></li>
-    </ul>
-    <div
-      class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"
-    ></div>
-    <div class="flex flex-row p-4 gap-10">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-        alt="Image description"
-        class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]"
-      />
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-        alt="Image description"
-        class="shrink-0 self-start aspect-square w-[21px]"
-      />
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-        alt="Image description"
-        class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white"
-      />
+      <div class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"></div>
+      <div class="flex flex-row p-4 gap-10 ">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start aspect-square w-[21px]" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white" />
+      </div>
     </div>
-  </div>
-</header>
-<!-- Navigation Bar -->
+  </header>
+  <!-- Navigation Bar -->
 
   <div class=" grid phone:max-tablet:text-center phone:mb-3 mb-5 tablet:ml-14 desktop:ml-24">
     <h1 class="text-3xl font-medium leading-10 text-black">Shop The Latest</h1>
