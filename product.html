@@ -68,7 +68,7 @@
           </a>
         </div>
         <nav
-          class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-auto"
+          class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-20 translate-x-full"
         >
           <a href="#" class="menu-close-btn absolute top-6 left-6">
             <svg
@@ -746,15 +746,14 @@
       const menuOpenBtn = document.querySelector(".menu-open-btn");
       const menuCloseBtn = document.querySelector(".menu-close-btn");
       const offCanvasMenu = document.querySelector(".offcanvas-menu");
-
-      menuCloseBtn.addEventListener("click", function () {
-        offCanvasMenu.classList.remove("translate-x-0");
-        offCanvasMenu.classList.add("translate-x-full");
-      });
-      menuOpenBtn.addEventListener("click", function () {
-        offCanvasMenu.classList.remove("translate-x-full");
-        offCanvasMenu.classList.add("translate-x-0");
-      });
+    
+      function toggleMenu() {
+        offCanvasMenu.classList.toggle("translate-x-full");
+        offCanvasMenu.classList.toggle("translate-x-0");
+      }
+    
+      menuCloseBtn.addEventListener("click", toggleMenu);
+      menuOpenBtn.addEventListener("click", toggleMenu);
     </script>
     <script type="module" src="/src/scripts/main.js"></script>
   </body>
