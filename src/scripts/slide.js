@@ -31,16 +31,3 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-const menuOpenBtn =   document.querySelector('.menu-open-btn');
-const menuCloseBtn = document.querySelector('.menu-close-btn');
-const offCanvasMenu = document.querySelector('.offcanvas-menu');
-
-menuCloseBtn.addEventListener('click', function(){
-  offCanvasMenu.classList.remove('translate-x-0');
-  offCanvasMenu.classList.add('translate-x-full');
-
-});
-menuOpenBtn.addEventListener('click', function(){
-  offCanvasMenu.classList.remove('translate-x-full');
-  offCanvasMenu.classList.add('translate-x-0');
-});

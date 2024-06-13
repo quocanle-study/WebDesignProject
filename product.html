@@ -114,7 +114,7 @@
 
       <div class="flex flex-row phone:max-tablet:hidden">
         <ul class="flex flex-row gap-8">
-          <li class="border-b-2 border-black p-4">
+          <li class="p-4">
             <a href="shop.html">Shop</a>
           </li>
           <li class="p-4"><a href="about.html">About Us</a></li>
@@ -742,19 +742,7 @@
     </footer>
     <!-- Footer -->
 
-    <script>
-      const menuOpenBtn = document.querySelector(".menu-open-btn");
-      const menuCloseBtn = document.querySelector(".menu-close-btn");
-      const offCanvasMenu = document.querySelector(".offcanvas-menu");
-    
-      function toggleMenu() {
-        offCanvasMenu.classList.toggle("translate-x-full");
-        offCanvasMenu.classList.toggle("translate-x-0");
-      }
-    
-      menuCloseBtn.addEventListener("click", toggleMenu);
-      menuOpenBtn.addEventListener("click", toggleMenu);
-    </script>
     <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module" src="/src/scripts/menu.js"></script>
   </body>
 </html>
