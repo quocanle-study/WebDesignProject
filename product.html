@@ -24,279 +24,736 @@
       margin-left: auto;
       margin-right: auto;
     }
-</style>
-<body>
-  <!-- Navigation Bar -->
-  <header class="flex flex-row col justify-between border-b-2 bg-white mx-5 my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 " >
-    <div class="flex flex-row mt-1 ml-2 tablet:hidden ">
-      <a href="#">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="size-7" />
-      </a>
-    </div>
-    <a href="index.html">
-      <div class="text-4xl leading-10 text-stone-950 ml-20 phone:max-tablet:ml-0 phone:max-tablet:mb-5">
-        <font color="#a28b68">L</font><span class="text-neutral-950">B</span
-        ><span class="tetx-stone-950">J</span>
-      </div>
-    </a>
-    <div class="relative tablet:hidden">
-      <div class="menu-open-btn phone:max-tablet:mb-5 ">
+  </style>
+  <body>
+    <!-- Navigation Bar -->
+    <header
+      class="flex flex-row col justify-between border-b-2 bg-white mx-5 my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0"
+    >
+      <div class="flex flex-row mt-1 ml-2 tablet:hidden">
         <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>                
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+            alt="Image description"
+            class="size-7"
+          />
         </a>
       </div>
-      <nav class=" offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-auto">
-        
-        <a href="#" class="menu-close-btn absolute top-6 left-6">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-          </svg>  
-        </a>
+      <a href="index.html">
+        <div
+          class="text-4xl leading-10 text-stone-950 ml-20 phone:max-tablet:ml-0 phone:max-tablet:mb-5"
+        >
+          <font color="#a28b68">L</font><span class="text-neutral-950">B</span
+          ><span class="tetx-stone-950">J</span>
+        </div>
+      </a>
+      <div class="relative tablet:hidden">
+        <div class="menu-open-btn phone:max-tablet:mb-5">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <nav
+          class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-auto"
+        >
+          <a href="#" class="menu-close-btn absolute top-6 left-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </a>
           <ul class="flex flex-col mt-16">
-                      
-            <il class="my-5"><a href="shop.html" class="text-xl font-semibold hover:text-red-500 duration-300" >Shop</a></il>
-            <il class="my-5"><a href="about.html" class="text-xl font-semibold hover:text-red-500 duration-300" >About Us</a></il>
-            <il class="my-5"><a href="#" class="text-xl font-semibold hover:text-red-500 duration-300" >Cart</a></il>
+            <il class="my-5"
+              ><a
+                href="shop.html"
+                class="text-xl font-semibold hover:text-red-500 duration-300"
+                >Shop</a
+              ></il
+            >
+            <il class="my-5"
+              ><a
+                href="about.html"
+                class="text-xl font-semibold hover:text-red-500 duration-300"
+                >About Us</a
+              ></il
+            >
+            <il class="my-5"
+              ><a
+                href="#"
+                class="text-xl font-semibold hover:text-red-500 duration-300"
+                >Cart</a
+              ></il
+            >
           </ul>
-        
-      </nav>
-    </div>
-    
-    <div class="flex flex-row phone:max-tablet:hidden">
-      
-      <ul class="flex flex-row gap-8">
-        <li class="border-b-2 border-black p-4"><a href="shop.html">Shop</a></li>
-        <li class="p-4"><a href="about.html">About Us</a></li>
-      </ul>
-      <div class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"></div>
-      <div class="flex flex-row p-4 gap-10 ">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]" />
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start aspect-square w-[21px]" />
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white" />
+        </nav>
       </div>
-    </div>
-  </header>
-  <!-- Navigation Bar -->
 
-    <div class="flex flex-wrap w-4/5 ml-auto mr-auto">
-      <div class="w-full flex flex-wrap justify-center">
-        <div class="bg-[url('https://product.hstatic.net/200000103143/product/combo-mday-12__3__f9a948c4f17545caa90191de210c3899_master.png')] w-full h-[630px] ml-0 md:ml-10 mt-10 md:mt-0 rounded-lg mb-5 bg-cover bg-center"></div>
-        <div class="flex flex-wrap justify-center space-x-0 md:space-x-10 w-full md:w-auto">
-          <div class="bg-black w-32 h-32 rounded-lg mb-5 md:mb-0"></div>
-          <div class="bg-blue-50 w-32 h-32 rounded-lg mb-5 md:mb-0"></div>
-          <div class="bg-red-600 w-32 h-32 rounded-lg mb-5 md:mb-0"></div>
-          <div class="bg-cyan-300 w-32 h-32 rounded-lg mb-5 md:mb-0"></div>
+      <div class="flex flex-row phone:max-tablet:hidden">
+        <ul class="flex flex-row gap-8">
+          <li class="border-b-2 border-black p-4">
+            <a href="shop.html">Shop</a>
+          </li>
+          <li class="p-4"><a href="about.html">About Us</a></li>
+        </ul>
+        <div
+          class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"
+        ></div>
+        <div class="flex flex-row p-4 gap-10">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+            alt="Image description"
+            class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+            alt="Image description"
+            class="shrink-0 self-start aspect-square w-[21px]"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+            alt="Image description"
+            class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white"
+          />
         </div>
       </div>
-      <div class="w-full md:w-auto flex flex-wrap justify-center">
-        
-        <div class="flex flex-col w-full md:w-[415px] h-[630px] ml-0 md:ml-8 mt-10 md:mt-0 rounded-lg">
-          <span class="text-2xl">Product</span>
-          <span class="mt-6 mb-14 text-[#A18A68]">£30.00 – £39.99</span>
-          <span class="mb-5 text-[#707070]">
-            <div>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-              <i class='bx bxs-star'></i>
-            </div>4 customer reviews
+    </header>
+    <!-- Navigation Bar -->
+
+    <div class="new-product-head-wrap flex flex-wrap relative">
+      <div class="new-product-images w-full md:w-2/3">
+        <div
+          class="swiper mx-auto relative overflow-hidden list-none p-0 z-10"
+          style="--data-xs: 1"
+        >
+          <div class="swiper-wrapper flex transition-transform box-content">
+            <div class="swiper-slide flex-shrink-0 w-full h-full relative">
+              <a
+                href="#galleryImage-item1"
+                class="zoom relative overflow-hidden"
+                id="style-hoWwR"
+              >
+                <img
+                  class="pl-20 pr-20 dt-width-100 img-fluid ls-is-cached lazyloaded w-full h-auto"
+                  width="480"
+                  height="480"
+                  src="https://product.hstatic.net/200000103143/product/592790c01_rgb_3cc4b266bdce4cdc9d99415c2f6c79c4_214a98c78f21435e894b35337624d93c_master.jpg"
+                  data-src="//product.hstatic.net/200000103143/product/592790c01_rgb_3cc4b266bdce4cdc9d99415c2f6c79c4_214a98c78f21435e894b35337624d93c_master.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="swiper-pagination absolute text-center transition-opacity transform translate3d-0 z-10"
+          ></div>
+          <div
+            class="swiper-button-next absolute top-1/2 w-[calc(var(--swiper-navigation-size)/44*27)] h-[var(--swiper-navigation-size)] mt-[-calc(var(--swiper-navigation-size)/2)] z-10 cursor-pointer flex items-center justify-center text-[var(--swiper-navigation-color,var(--swiper-theme-color))] right-2.5 left-auto"
+          ></div>
+          <div
+            class="swiper-button-prev absolute top-1/2 w-[calc(var(--swiper-navigation-size)/44*27)] h-[var(--swiper-navigation-size)] mt-[-calc(var(--swiper-navigation-size)/2)] z-10 cursor-pointer flex items-center justify-center text-[var(--swiper-navigation-color,var(--swiper-theme-color))] left-2.5 right-auto"
+          ></div>
+        </div>
+        <div class="new-product-images-info hidden md:block mt-6">
+          <ul
+            class="flex flex-wrap items-center justify-start overflow-y-hidden overflow-x-auto p-0 list-none"
+          >
+            <li
+              class="p-2.5 text-sm font-normal w-full md:w-[calc(33.3333%-20px)] text-center"
+            >
+              The one-for-one exchange policy applies within 15 days from the
+              date of receipt and can only be exchanged once
+            </li>
+            <li
+              class="p-2.5 text-sm font-normal w-full md:w-[calc(33.3333%-20px)] text-center"
+            >
+              Free shipping
+            </li>
+            <li
+              class="p-2.5 text-sm font-normal w-full md:w-[calc(33.3333%-20px)] text-center"
+            >
+              Sanitize and clean products for free
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="new-product-info w-full md:w-1/3 max-w-[360px] mx-auto sticky top-[140px] h-min-content md:max-w-[85%] md:mt-4"
+      >
+        <div
+          class="new-product-info-label text-center font-normal text-gray-500 text-sm uppercase mb-2.5 tracking-wider"
+        >
+          <span></span>
+        </div>
+        <h1 class="new-product-title font-bold text-2xl mt-2.5 text-center">
+          Silver Ring Covered in Blue Leather
+        </h1>
+        <div
+          class="new-product-info-prices flex justify-center items-center text-sm"
+        >
+          <b
+            class="bg-pink-200 text-gray-800 inline-block px-2.5 py-1 font-bold mx-1.5"
+            >£30.00</b
+          >
+          <del class="mx-1.5">£0</del>
+          <span
+            class="bg-gray-800 text-white inline-block px-2.5 py-1 font-medium mx-1.5"
+            >-0%</span
+          >
+        </div>
+        <div class="new-product-swatch border-t border-b border-gray-300 mt-6">
+          <form
+            id="add-item-form"
+            action="/cart/add"
+            method="post"
+            class="variants clearfix"
+          >
+            <!-- <div class="select clearfix hidden">
+            <div class="selector-wrapper">
+              <label for="product-select-option-0">Chất liệu</label>
+              <select
+                class="single-option-selector"
+                data-option="option1"
+                id="product-select-option-0"
+              >
+                <option value="Bạc">Bạc</option>
+              </select>
+            </div>
+            <div class="selector-wrapper">
+              <label for="product-select-option-1">Kích thước</label>
+              <select
+                class="single-option-selector"
+                data-option="option2"
+                id="product-select-option-1"
+              >
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+              </select>
+            </div>
+            <div class="selector-wrapper">
+              <label for="product-select-option-2">Stylecode</label>
+              <select
+                class="single-option-selector"
+                data-option="option3"
+                id="product-select-option-2"
+              >
+                <option value="DAYDA-XANH-DO">DAYDA-XANH-DO</option>
+              </select>
+            </div>
+            <select id="product-select" name="id" class="hidden">
+              <option
+                data-sku="592790C01-S1"
+                data-color="Bạc"
+                value="1114836164"
+              >
+                Bạc / S1 / DAYDA-XANH-DO - 2,090,000₫
+              </option>
+              <option
+                data-sku="592790C01-S2"
+                data-color="Bạc"
+                value="1114836165"
+              >
+                Bạc / S2 / DAYDA-XANH-DO - 2,090,000₫
+              </option>
+            </select>
+          </div> -->
+            <div class="select-swatch">
+              <div
+                id="variant-swatch-0"
+                class="swatch clearfix"
+                data-option="option1"
+                data-option-index="0"
+              >
+                <div class="header"><span>Material</span></div>
+                <div class="select-swap">
+                  <div
+                    data-value="Bạc"
+                    class="209000000 n-sd swatch-element bac"
+                  >
+                    <input
+                      class="variant-0 hidden"
+                      id="swatch-0-bac"
+                      type="radio"
+                      name="option1"
+                      value="Bạc"
+                      data-vhandle="bac"
+                      checked
+                    />
+                    <label
+                      for="swatch-0-bac"
+                      class="sd block mx-2.5 my-2.5 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300"
+                      ><span>Silver</span></label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                id="variant-swatch-1"
+                class="swatch clearfix"
+                data-option="option2"
+                data-option-index="1"
+              >
+                <div class="header clearfix size-header">
+                  <span>Size</span>
+                  <a
+                    href="javascript:void(0)"
+                    class="sizeguide-trigger float-right text-gray-500 text-sm"
+                    onclick="F1GEN.Helper.sizeGuide();"
+                    >Instructions for choosing size</a
+                  >
+                </div>
+                <div class="select-swap">
+                  <div data-value="S1" class="209000000 n-sd swatch-element s1">
+                    <input
+                      class="variant-1 hidden"
+                      id="swatch-1-s1"
+                      type="radio"
+                      name="option2"
+                      value="S1"
+                      data-vhandle="s1"
+                      checked
+                    />
+                    <label
+                      for="swatch-1-s1"
+                      class="sd block mx-2.5 my-2.5 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300"
+                      ><span>S1</span></label
+                    >
+                  </div>
+                  <div data-value="S2" class="209000000 n-sd swatch-element s2">
+                    <input
+                      class="variant-1 hidden"
+                      id="swatch-1-s2"
+                      type="radio"
+                      name="option2"
+                      value="S2"
+                      data-vhandle="s2"
+                    />
+                    <label
+                      for="swatch-1-s2"
+                      class="block mx-2.5 my-2.5 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300"
+                      ><span>S2</span></label
+                    >
+                  </div>
+                </div>
+                <!-- <div hidden class="header clearfix size-chose-guide">
+                          <a class="guide-button float-right text-gray-500 text-sm" href="javascript:void(0)">Hướng dẫn chọn size</a>
+                      </div> -->
+              </div>
+              <div
+                id="variant-swatch-2"
+                class="swatch clearfix"
+                data-option="option3"
+                data-option-index="2"
+              >
+                <div class="header"><span>Stylecode</span></div>
+                <div class="select-swap">
+                  <div
+                    data-value="DAYDA-XANH-DO"
+                    class="209000000 n-sd swatch-element dayda-xanh-do variant-3"
+                  >
+                    <input
+                      class="variant-2 hidden"
+                      id="swatch-2-dayda-xanh-do"
+                      type="radio"
+                      name="option3"
+                      value="DAYDA-XANH-DO"
+                      data-vhandle="dayda-xanh-do"
+                      checked
+                    />
+                    <label
+                      for="swatch-2-dayda-xanh-do"
+                      class="sd block mx-2.5 my-2.5 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300"
+                      ><span>LEATHER-GREEN-RED</span></label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="new-product-action mt-6">
+          <button
+            id="addcart"
+            class="w-full bg-gray-800 text-white flex justify-center items-center h-11"
+          >
+            Add to cart
+          </button>
+        </div>
+        <div class="new-product-wishlist mt-4">
+          <span class="wishlist-btn" data-pid="1051064861">
+            <button
+              data-pid="1051064861"
+              data-handle="vong-bac-pandora-boc-da-mau-xanh"
+              data-price="2090000"
+              data-title="Vòng Bạc Pandora Bọc Da Màu Xanh"
+              id="onAppWishList_btn_remove"
+              class="hidden w-full h-11 bg-transparent text-2xl text-gray-800 flex justify-center items-center"
+            >
+              <i class="fa fa-heart"></i>
+              <span class="hidden text-sm ml-2.5">Xoá khỏi yêu thích</span>
+            </button>
+            <button
+              data-pid="1051064861"
+              data-handle="vong-bac-pandora-boc-da-mau-xanh"
+              data-price="2090000"
+              data-title="Vòng Bạc Pandora Bọc Da Màu Xanh"
+              id="onAppWishList_btn_add"
+              class="w-full h-11 bg-transparent text-2xl text-gray-800 flex justify-center items-center"
+            >
+              <i class="fa fa-heart-o"></i>
+              <span class="hidden text-sm ml-2.5">Thêm vào yêu thích</span>
+            </button>
           </span>
-          <span class="text-[#707070]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente porro, aut velit perferendis itaque explicabo necessitatibus corporis! Voluptatibus commodi assumenda fuga incidunt sapiente? Quod eaque vel laboriosam aliquam. Minus.</span>
-          <div class="flex flex-col md:flex-row mt-11">
-            <span class="mr-8 font-medium">Color</span>
-            <select class="border-b-2 border-zinc-300 w-full md:w-[340px]">
-              <option value="choose">Choose an option</option>
-              <option value="gold">Gold</option>
-              <option value="silver">Silver</option>
-            </select>
-          </div>
-          <div class="flex flex-col md:flex-row mt-8">
-            <span class="mr-3 font-medium">Material</span>
-            <select class="border-b-2 border-zinc-300 w-full md:w-[340px]">
-              <option value="choose">Choose an option</option>
-              <option value="gold">Gold</option>
-              <option value="silver">Silver</option>
-            </select>
-          </div>
-          <div class="flex flex-col md:flex-row mt-10">
-            <form action="/action_page.php">
-              <input type="number" id="quantity" name="quantity" min="1" max="99" class="bg-[#e6e6e6] w-11 h-11 text-center rounded-md">
-            </form>
-            <button class="w-full md:w-[345px] ml-0 md:ml-6 mt-6 md:mt-0 text-center border-2 font-medium text-[#909090] border-[#909090] rounded-md hover:bg-[#808080] hover:text-[#ffffff]">ADD TO CART</button>
-          </div>
-          <div class="flex flex-col mt-6">
-            <label>SKU: <span class="text-[#909090]">E001-00</span></label>
-            <label>Category: <a href="#" class="text-[#909090]">Gold</a></label>
-            <label>Tag: <a href="#" class="text-[#909090]">Gold</a></label>
-          </div>
         </div>
       </div>
     </div>
 
-    <div class="ml-5 mr-5 md:ml-10 md:mr-10">
-      <div class="w-full sm:w-4/5 ml-1 mr-1 mt-40">
-        <ul class="flex gap-x-14 text-xl flex-wrap md:flex-nowrap">
-          <li class="pb-7">Description</li>
-          <li class="pb-7 text-[#909090]">Additional information</li>
-          <li class="pb-7 text-[#909090]">Reviews (4)</li>
+    <div class="new-container sm:mt-10 mx-5 sm:mx-10 max-w-[1600px] px-2.5">
+      <div class="new-product-contents my-12.5">
+        <div class="new-product-content border-b border-gray-300 mb-3.75">
+          <h3
+            class="cursor-pointer font-bold text-2xl flex flex-wrap items-center justify-between pb-3.75 mb-0"
+          >
+            Product information<span
+              class="active opacity-50 w-5 text-center"
+            ></span>
+          </h3>
+          <p class="mt-2 mb-2.5 leading-5">
+            Like an adventure under the ocean and like a peaceful walk in the
+            night sky. The Pandora Moments Round Clasp Blue Braided Woven
+            Leather Bracelet is woven from delicate dark blue leather straps,
+            finished with a round sterling silver buckle and delicate sterling
+            silver tip. Paired with up to 9 pieces of jewelry or dangles, this
+            bracelet will enhance the unique beauty of your favorite pieces of
+            jewelry. Let it become a timeless work of art on your wrist
+          </p>
+          <p class="mt-2.5 mb-0">
+            Collection:&nbsp;Pandora
+            <span
+              class="text-[13px] text-black font-normal not-italic no-underline font-[Arial]"
+              >Moments</span
+            ><br />Product code:&nbsp;592790C01<br />Product
+            classification:&nbsp;Bracelet<br />Material:&nbsp;Leather<br />Color:&nbsp;Green
+          </p>
+        </div>
+      </div>
+      <div
+        id="wrap_ezca-product-reviews"
+        data-title="Vòng Bạc Pandora Bọc Da Màu Xanh"
+        data-url="/products/vong-bac-pandora-boc-da-mau-xanh"
+        data-img="https://product.hstatic.net/200000103143/product/592790c01_rgb_3cc4b266bdce4cdc9d99415c2f6c79c4_214a98c78f21435e894b35337624d93c.jpg"
+        data-id="1051064861"
+        data-customer=""
+      ></div>
+      <div class="new-product-ps">
+        <ul
+          class="max-w-4/5 mx-auto flex flex-wrap justify-between items-start"
+        >
+          <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
+            <h4 class="font-medium text-lg leading-7 text-black mb-3">
+              Exchange policy
+            </h4>
+            <p class="mb-2.5 leading-5">
+              The exchange policy only applies to products with technical
+              defects and at full price. The one-for-one exchange policy applies
+              within 15 days from the date of receipt and can only be exchanged
+              once.
+            </p>
+          </li>
+          <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
+            <h4 class="font-medium text-lg leading-7 text-black mb-3">
+              Give a gift
+            </h4>
+            <p class="mb-2.5 leading-5">
+              Do you want to send Pandora jewelry to someone special? Just
+              choose the product you want to give, our customer service staff
+              will personally wrap the gift and write the message you want to
+              send to the gift recipient. Just make a note on your order when
+              ordering! Pandora will contact you shortly!
+            </p>
+          </li>
+          <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
+            <h4 class="font-medium text-lg leading-7 text-black mb-3">
+              Free shipping
+            </h4>
+            <p class="mb-2.5 leading-5">
+              Pandora offers free shipping nationwide for all order values.
+            </p>
+          </li>
+          <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
+            <h4 class="font-medium text-lg leading-7 text-black mb-3">
+              Preservation method
+            </h4>
+            <p class="mb-2.5 leading-5">
+              The product should be cleaned with Pandora's specialized product
+              cleaning kit and after use, please clean and store in a sealed box
+              to avoid exposure to air and oxidation.
+            </p>
+          </li>
         </ul>
       </div>
-      <div class="flex gap-0 w-full sm:w-4/5 flex-wrap md:flex-nowrap pr-5 md:pr-0 max-w-full ml-auto mr-auto mb-6">
-        <div class="flex-auto h-0.5 border border-solid bg-zinc-300 border-zinc-300 max-w-full"></div>
-      </div>
-      <div class="w-full sm:w-4/5 ml-auto mr-auto">
-        <label for="" class="text-[#909090]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, ea? Sunt dolor maxime recusandae consequatur! Libero maxime, corrupti quia magni ratione, eligendi fugiat dolorem beatae, voluptas corporis adipisci eos dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde iure praesentium voluptas, repellendus architecto animi id sed beatae dignissimos ex dicta a. In distinctio praesentium, magni vero eligendi mollitia.
-        </label>
-      </div>
-      <div class="w-full sm:w-4/5 ml-auto mr-auto mt-28">
-        <label class="text-3xl">Related products</label>
-        <!-- Product Grid -->
-        <section class="grid justify-items-center phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4">
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product.html">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                  <font color="#a28b68">$20,000</font>
-              </h4>
-            </a>
-          </div>
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product.html">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-center text-[12px] desktop:text-[18px]">
-                <font color="#a28b68">$20,000</font>
-              </h4>
-            </a>
-          </div>
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                <font color="#a28b68">$20,000</font>
-            </h4>          
+
+      <h3
+        class="mb-10 cursor-pointer font-bold text-2xl flex flex-wrap items-center justify-between pb-3.75 mb-0"
+      >
+        Related products<span class="active opacity-50 w-5 text-center"></span>
+      </h3>
+      <!-- Product Grid -->
+      <section
+        class="grid justify-items-center phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4"
+      >
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product.html">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-[12px] text-center desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
           </a>
-          </div>
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product.html">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                <font color="#a28b68">$20,000</font>
-            </h4>          
+        </div>
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product.html">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-center text-[12px] desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
           </a>
-          </div>
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product.html">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                <font color="#a28b68">$20,000</font>
-            </h4>          
+        </div>
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-[12px] text-center desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
           </a>
-          </div>
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product.html">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                <font color="#a28b68">$20,000</font>
-            </h4>          
+        </div>
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product.html">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-[12px] text-center desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
           </a>
-          </div>
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product.html">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                <font color="#a28b68">$20,000</font>
-            </h4>          
+        </div>
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product.html">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-[12px] text-center desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
           </a>
-          </div>
-          <div class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-            <a href="product.html">
-              <div class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
-              </div>
-              <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-              <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                <font color="#a28b68">$20,000</font>
-            </h4>          
+        </div>
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product.html">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-[12px] text-center desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
           </a>
-          </div>
-        </section>
-      </div>
+        </div>
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product.html">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-[12px] text-center desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
+          </a>
+        </div>
+        <div
+          class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]"
+        >
+          <a href="product.html">
+            <div
+              class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center"
+            ></div>
+            <h3
+              class="text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl"
+            >
+              Product
+            </h3>
+            <h4 class="text-[12px] text-center desktop:text-[18px]">
+              <font color="#a28b68">$20,000</font>
+            </h4>
+          </a>
+        </div>
+      </section>
     </div>
-    
 
     <!-- Footer -->
-  <footer class="grid col border-t-2 mt-60 phone:max-tablet:justify-center">
-    <section class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex">
-      <div class="flex gap-5 mt-10 phone:flex-col">
-        <div>
-          <a href="" class="text-gray-500 mr-10">CONTACT</a>
-          <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
-          <a href="" class="text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
-        </div>
-    </div>
-        <div class="border-b-2 border-black">
-          <div class="flex justify-between gap-20 mt-7 mb-2">
-            <input class="text-black" type="text" placeholder="Give an email, get the newsletter.">
-            <img 
-            class="cursor-pointer" 
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" />
+    <footer class="grid col border-t-2 mt-60 phone:max-tablet:justify-center">
+      <section
+        class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex"
+      >
+        <div class="flex gap-5 mt-10 phone:flex-col">
+          <div>
+            <a href="" class="text-gray-500 mr-10">CONTACT</a>
+            <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
+            <a href="" class="text-gray-500 mr-10">SHIPPING AND RETURNS</a>
           </div>
         </div>
-    </section>
-    <section class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10 ">
-      <div>
-        © 2024 LBJ.
-        <a href="#" class="text-gray-500">Terms of use</a>
-        and
-        <a href="#" class="text-gray-500">Privacy Policy</a>
-      </div>
-      <div class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0 phone:max-tablet:justify-center">
-        <a href="#">
-          <img class="size-[15px]" src="/asset/linkedin-big-logo.png" alt="In Icon">
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100006106118260" target="_blank">
-          <img class="size-[15px]" src="/asset/facebook (1).png" alt="Facebook Icon">
-        </a>
-        <a href="#">
-          <img class="size-[15px]" src="/asset/instagram.png" alt="Instagram Icon">
-        </a>
-        <a href="#">
-          <img class="size-[15px]" src="/asset/twitter.png" alt="Twitter Icon">
-        </a>
-    </section>
-  </footer> 
-  <!-- Footer -->
+        <div class="border-b-2 border-black">
+          <div class="flex justify-between gap-20 mt-7 mb-2">
+            <input
+              class="text-black"
+              type="text"
+              placeholder="Give an email, get the newsletter."
+            />
+            <img
+              class="cursor-pointer"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section
+        class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10"
+      >
+        <div>
+          © 2024 LBJ.
+          <a href="#" class="text-gray-500">Terms of use</a>
+          and
+          <a href="#" class="text-gray-500">Privacy Policy</a>
+        </div>
+        <div
+          class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0 phone:max-tablet:justify-center"
+        >
+          <a href="#">
+            <img
+              class="size-[15px]"
+              src="/asset/linkedin-big-logo.png"
+              alt="In Icon"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100006106118260"
+            target="_blank"
+          >
+            <img
+              class="size-[15px]"
+              src="/asset/facebook (1).png"
+              alt="Facebook Icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="size-[15px]"
+              src="/asset/instagram.png"
+              alt="Instagram Icon"
+            />
+          </a>
+          <a href="#">
+            <img
+              class="size-[15px]"
+              src="/asset/twitter.png"
+              alt="Twitter Icon"
+            />
+          </a>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer -->
 
     <script>
-      const menuOpenBtn =   document.querySelector('.menu-open-btn');
-      const menuCloseBtn = document.querySelector('.menu-close-btn');
-      const offCanvasMenu = document.querySelector('.offcanvas-menu');
+      const menuOpenBtn = document.querySelector(".menu-open-btn");
+      const menuCloseBtn = document.querySelector(".menu-close-btn");
+      const offCanvasMenu = document.querySelector(".offcanvas-menu");
 
-      menuCloseBtn.addEventListener('click', function(){
-        offCanvasMenu.classList.remove('translate-x-0');
-        offCanvasMenu.classList.add('translate-x-full');
-
+      menuCloseBtn.addEventListener("click", function () {
+        offCanvasMenu.classList.remove("translate-x-0");
+        offCanvasMenu.classList.add("translate-x-full");
       });
-      menuOpenBtn.addEventListener('click', function(){
-        offCanvasMenu.classList.remove('translate-x-full');
-        offCanvasMenu.classList.add('translate-x-0');
+      menuOpenBtn.addEventListener("click", function () {
+        offCanvasMenu.classList.remove("translate-x-full");
+        offCanvasMenu.classList.add("translate-x-0");
       });
     </script>
     <script type="module" src="/src/scripts/main.js"></script>
