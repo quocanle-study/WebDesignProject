@@ -1,9 +1,6 @@
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
-
 const getHomepage = async (req, res) => {
-    const posts = await prisma.post.findMany({ include: { category: true } });
-    return res.render('pages/homepage', { posts });
+    // TODO: Add logic to fetch data required to display one homepage from the database
+    return res.render('pages/homepage');
 };
 
 export { getHomepage };
