@@ -42,6 +42,7 @@ app.set('view engine', 'ejs'); // Set view engine
 app.set('views', path.join('src/views')); // Set views directory
 app.use(expressLayouts); // Use express-ejs-layouts
 app.set('layout', 'layouts/default'); // Set default layout
+app.set('layout extractScripts', true); // Set script blocks extraction to place all the script blocks at the end
 app.use(limiter); // Apply rate limiter
 app.use(
     helmet.contentSecurityPolicy({
