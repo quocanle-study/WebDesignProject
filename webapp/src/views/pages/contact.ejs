@@ -1,37 +1,74 @@
-<section class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md m-auto">
-    <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
-
-    <% if (errors && errors.length > 0) { %>
-        <div class="bg-red-100 text-red-700 p-4 mb-6 rounded-lg">
-            <ul>
-                <% errors.forEach(function(error) { %>
-                    <li><%= error %></li>
-                <% }); %>
-            </ul>
-        </div>
-    <% } %>
-
-    <form id="contactForm" action="/contact" method="POST">
-        <input type="hidden" name="_csrf" value="<%= csrfToken %>"/>
-        <div class="mb-4">
-            <label for="name" class="block text-gray-700">Name</label>
-            <input type="text" id="name" name="name"
-                   class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   value="<%= oldData ? oldData.name : '' %>">
-        </div>
-        <div class="mb-4">
-            <label for="email" class="block text-gray-700">Email</label>
-            <input type="email" id="email" name="email"
-                   class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   value="<%= oldData ? oldData.email : '' %>">
-        </div>
-        <div class="mb-4">
-            <label for="message" class="block text-gray-700">Message</label>
-            <textarea id="message" name="message" rows="4"
-                      class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"><%= oldData ? oldData.message : '' %></textarea>
-        </div>
-        <button type="submit"
-                class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-200">Send
-        </button>
-    </form>
-</section>
+<div class="flex flex-col items-center px-20 py-16 bg-white max-md:px-5">
+    <main class="mt-32 max-md:mt-10">
+        <h1 class="text-4xl font-medium leading-10 text-black">Contact Us</h1>
+        <p
+                class="mt-14 text-xl leading-7 text-center text-black max-md:mt-10 max-md:max-w-full"
+        >
+            Say Hello send us your thoughts about our products or share<br/>your
+            ideas with our Team!
+        </p>
+        <form
+                class="flex flex-col gap-5 mt-28 max-w-full text-base leading-7 text-neutral-500 w-[908px] max-md:flex-wrap max-md:mt-10"
+        >
+            <div class="flex gap-5">
+                <div class="flex flex-col flex-1">
+                    <label for="firstName">First name</label>
+                    <input
+                            type="text"
+                            id="firstName"
+                            class="mt-5 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                </div>
+                <div class="flex flex-col flex-1">
+                    <label for="lastName">Last name</label>
+                    <input
+                            type="text"
+                            id="lastName"
+                            class="mt-5 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                </div>
+            </div>
+            <div class="flex gap-5 mt-24">
+                <div class="flex flex-col flex-1">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            class="mt-5 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                </div>
+                <div class="flex flex-col flex-1">
+                    <label for="subject" class="flex gap-5 justify-between"
+                    >Subject</label
+                    >
+                    <input
+                            type="text"
+                            id="subject"
+                            class="mt-4 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                    <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c134dd16ae69ae8e85ae27e8b5cb5f747e7cba24cd178b68db5d83d0f72c4e3?apiKey=7a8be1ef8e724487a3a72840cedf3b54&"
+                            alt="Subject icon"
+                            class="shrink-0 self-start mt-2 w-2.5 aspect-[1.67] fill-black"
+                    />
+                </div>
+            </div>
+            <label
+                    for="message"
+                    class="self-start mt-32 ml-48 sr-only max-md:mt-10 max-md:ml-2.5"
+            >Message</label
+            >
+            <textarea
+                    id="message"
+                    class="mt-12 max-w-full h-px border border-solid bg-zinc-300 border-zinc-300 w-[908px] max-md:mt-10"
+            ></textarea>
+            <button
+                    type="submit"
+                    class="justify-center items-center px-16 py-5 mt-24 max-w-full text-base font-bold text-white whitespace-nowrap bg-black rounded w-[500px] max-md:px-5 max-md:mt-10"
+            >
+                SEND
+            </button>
+        </form>
+    </main>
+</div>
