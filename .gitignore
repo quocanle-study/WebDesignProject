@@ -131,3 +131,6 @@ dist
 
 # vscode settings
 .vscode/settings.json
+
+# PHPStorm IDE settings
+.idea

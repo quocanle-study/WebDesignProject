@@ -1,0 +1,12 @@
+<section class="bg-white p-8 shadow-lg rounded-lg">
+    <h2 class="text-2xl font-bold mb-4">All Posts</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <% posts.forEach(function(post) { %>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <h4 class="text-lg font-bold mb-2"><a href="/posts/<%= post.id %>" class="text-blue-500 hover:underline"><%= post.title %></a></h4>
+                <span class="text-gray-500"><%= post.category.name %></span> <br/>
+                <span class="text-gray-500 text-xs"><%= post.createdAt.toDateString() %></span>
+            </div>
+        <% }); %>
+    </div>
+</section>
