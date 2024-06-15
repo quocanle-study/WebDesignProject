@@ -1,7 +1,7 @@
 import express from 'express';
 import { getHomepage } from './controllers/homepage-controller.js';
 import { getAboutPage } from './controllers/about-controller.js';
-import { getPosts, getPostById } from './controllers/post-controller.js';
+import { getProducts, getProductById } from './controllers/product-controller.js';
 import { getContactForm, createContact, contactSuccess } from './controllers/contact-controller.js';
 import { contactValidator } from './validators/index.js';
 
@@ -13,9 +13,9 @@ router.get('/', getHomepage);
 /** About **/
 router.get('/about', getAboutPage);
 
-/** Posts **/
-router.get('/posts', getPosts);
-router.get('/posts/:id', getPostById);
+/** Products **/
+router.get('/shop', getProducts);
+router.get('/product', getProductById);
 
 /** Contact **/
 router.get('/contact', getContactForm);
