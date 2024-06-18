@@ -1,0 +1,15 @@
+<section class="text-center">
+    <h1 class="text-9xl font-bold text-red-600">Error</h1>
+    <h2 class="text-3xl md:text-4xl font-medium py-4 text-gray-800">Something went wrong</h2>
+    <p class="text-md md:text-lg text-gray-500 mb-8">
+        We're sorry, but an unexpected error has occurred. Please try again later or contact support if the problem persists.
+    </p>
+    <% if (error && error.message) { %>
+        <div class="bg-red-100 text-red-800 p-4 rounded-lg mb-4">
+            <strong>Error:</strong> <%= error.message %>
+        </div>
+    <% } %>
+    <a href="/" class="inline-block px-6 py-3 bg-red-600 text-white font-semibold rounded shadow hover:bg-red-700 transition-colors">
+        Go to Home
+    </a>
+</section>

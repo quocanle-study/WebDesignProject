@@ -1,0 +1,74 @@
+<div class="flex flex-col items-center px-20 py-16 bg-white max-md:px-5">
+    <main class="mt-32 max-md:mt-10">
+        <h1 class="text-4xl font-medium leading-10 text-black">Contact Us</h1>
+        <p
+                class="mt-14 text-xl leading-7 text-center text-black max-md:mt-10 max-md:max-w-full"
+        >
+            Say Hello send us your thoughts about our products or share<br/>your
+            ideas with our Team!
+        </p>
+        <form
+                class="flex flex-col gap-5 mt-28 max-w-full text-base leading-7 text-neutral-500 w-[908px] max-md:flex-wrap max-md:mt-10"
+        >
+            <div class="flex gap-5">
+                <div class="flex flex-col flex-1">
+                    <label for="firstName">First name</label>
+                    <input
+                            type="text"
+                            id="firstName"
+                            class="mt-5 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                </div>
+                <div class="flex flex-col flex-1">
+                    <label for="lastName">Last name</label>
+                    <input
+                            type="text"
+                            id="lastName"
+                            class="mt-5 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                </div>
+            </div>
+            <div class="flex gap-5 mt-24">
+                <div class="flex flex-col flex-1">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            class="mt-5 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                </div>
+                <div class="flex flex-col flex-1">
+                    <label for="subject" class="flex gap-5 justify-between"
+                    >Subject</label
+                    >
+                    <input
+                            type="text"
+                            id="subject"
+                            class="mt-4 h-px border border-solid bg-zinc-300 border-zinc-300"
+                    />
+                    <img
+                            loading="lazy"
+                            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8c134dd16ae69ae8e85ae27e8b5cb5f747e7cba24cd178b68db5d83d0f72c4e3?apiKey=7a8be1ef8e724487a3a72840cedf3b54&"
+                            alt="Subject icon"
+                            class="shrink-0 self-start mt-2 w-2.5 aspect-[1.67] fill-black"
+                    />
+                </div>
+            </div>
+            <label
+                    for="message"
+                    class="self-start mt-32 ml-48 sr-only max-md:mt-10 max-md:ml-2.5"
+            >Message</label
+            >
+            <textarea
+                    id="message"
+                    class="mt-12 max-w-full h-px border border-solid bg-zinc-300 border-zinc-300 w-[908px] max-md:mt-10"
+            ></textarea>
+            <button
+                    type="submit"
+                    class="justify-center items-center px-16 py-5 mt-24 max-w-full text-base font-bold text-white whitespace-nowrap bg-black rounded w-[500px] max-md:px-5 max-md:mt-10"
+            >
+                SEND
+            </button>
+        </form>
+    </main>
+</div>
