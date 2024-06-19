@@ -11,7 +11,12 @@ export default {
             md: '960px',
             lg: '1440px',
         },
-        extend: {},
+        extend: {
+            fontFamily: {
+                roboto: ['Roboto', 'sans-serif'],
+            },
+        },
+    
     },
     plugins: [],
 };
