@@ -14,38 +14,41 @@ datasource db {
 
 // TODO: Add the data schema for your application here
 
-model Product {
-  id       Int       @id @default(autoincrement())
-  name     String
-  description String
-  price    Float
-  productCategories ProductCategory[]
-  images   ProductImage[]
+model Products {
+  id            Int             @id @default(autoincrement())
+  name          String
+  description   String?
+  price         Decimal
+  created_at    DateTime        @default(now()) @map("created_at")
+  ProductImages ProductImage[]
+  ProductCategories ProductCategory[]
 }
 
 model Category {
-  id       Int       @id @default(autoincrement())
-  name     String
-  productCategories ProductCategory[]
+  id            Int             @id @default(autoincrement())
+  name          String
+  created_at    DateTime        @default(now()) @map("created_at")
+  ProductCategories ProductCategory[]
 }
 
 model ProductCategory {
-  productId  Int
-  categoryId Int
-  product    Product @relation(fields: [productId], references: [id])
-  category   Category @relation(fields: [categoryId], references: [id])
+  product_id    Int
+  category_id   Int
+  Product       Products         @relation(fields: [product_id], references: [id])
+  Category      Category        @relation(fields: [category_id], references: [id])
 
-  @@id([productId, categoryId])
+  @@id([product_id, category_id])
 }
 
 model ProductImage {
-  id        Int      @id @default(autoincrement())
-  productId Int
-  imageUrl  String
-  product   Product @relation(fields: [productId], references: [id])
+  id            Int             @id @default(autoincrement())
+  product_id    Int
+  image_url     String?
+  Product       Products         @relation(fields: [product_id], references: [id])
 }
 
 model SortOption {
-  id   Int    @id @default(autoincrement())
-  name String
+  id            Int             @id @default(autoincrement())
+  name          String
+  created_at    DateTime        @default(now()) @map("created_at")
 }

@@ -4,7 +4,7 @@ const prisma = new PrismaClient();
 
 const getProducts = async (req, res) => {
     // TODO: Fetch products from database
-    const products = await prisma.product.findMany();
+    const products = await prisma.products.findMany();
 
     if (!products) {
         throw new Error('No products found');
@@ -14,7 +14,7 @@ const getProducts = async (req, res) => {
         return res.json(products);
     }
 
-    return res.render('pages/products', { products });
+    return res.render('pages/shop', { products });
 };
 
 const getProductById = async (req, res) => {
@@ -26,19 +26,19 @@ const getProductById = async (req, res) => {
         return res.status(400).json({ error: 'Invalid product id' });
     }
 
-    const product = await prisma.product.findUnique({
+    const products = await prisma.products.findUnique({
         where: { id: parseInt(id) },
     });
 
-    if (!product) {
+    if (!products) {
         return res.status(404).json({ error: 'Product not found' });
     }
 
-    if (req.isAjax()) {
-        return res.json(product);
+    if (req.xhr) {
+        return res.json(products);
     }
 
-    return res.render('pages/product-detail', { product });
+    return res.render('pages/product', { products });
 };
 
 export { getProducts, getProductById };
