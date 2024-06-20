@@ -1,10 +1,11 @@
+<section class="grid justify-center">
 <div class=" grid phone:max-tablet:text-center phone:mb-3 tablet:mx-[200px] max-w-[1200px]">
     <h1 class="text-3xl font-medium text-black mb-5 ">Shop The Latest</h1>
 </div>
-<main class="grid tablet:grid-cols-3 laptop:grid-cols-4 tablet:mx-[200px] max-w-[1200px] ">
+<main class="grid tablet:grid-cols-3 laptop:grid-cols-4 tablet:mx-[200px] max-w-[1200px]">
     <!-- Sidebar -->
     <section
-            class="grid flex-col phone:max-tablet:justify-center tablet:flex tablet:w-[300px] phone:max-tablet:border-gray-200 phone:max-tablet:border-b-2 phone:max-tablet:p-4 phone:mb-5 phone:[calc(1600px-200px-260px*3)]">
+            class="grid flex-col phone:max-tablet:justify-center tablet:flex  phone:max-tablet:border-gray-200 phone:max-tablet:border-b-2 phone:max-tablet:p-4 phone:mb-5 gap-5">
         <div class="flex flex-row phone:max-tablet:justify-center">
             <input class="border-b-2 border-gray-100" type="text" placeholder="Search"/>
             <a href="">
@@ -55,19 +56,24 @@
 
             </div>
         </section>
-       
-        <div class="flex justify-between my-10 phone:max-tablet:hidden w-[200px] ">
-            <a>On sale</a>
-            <label for="checkSale" class="bg-neutral-600 w-[35px] h-[22px] rounded-full relative cursor-pointer" >
-                <input type="checkbox" id="checkSale" class=" sr-only peer">
-                <span class="w-2/5 h-4/6 bg-white absolute rounded-full left-1 top-1 peer-checked:bg-green-400 peer-checked:left-4 transition-all duration-300"></span>
+
+       <!-- On Sale and In stock-->
+        <div 
+            id = "shopBy"
+            class="flex justify-between my-10 phone:max-tablet:hidden w-[200px] ">
+            <a>On sale</a> 
+            <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none  rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
             </label>
         </div>
-        <div class="flex justify-between phone:max-tablet:hidden w-[200px]">
+        <div 
+            id="sortBy"
+            class="flex justify-between phone:max-tablet:hidden w-[200px]">
             <a>In stock</a>
-            <label for="checkStock" class="bg-neutral-600 w-[35px] h-[22px] rounded-full relative cursor-pointer" >
-                <input type="checkbox" id="checkStock" class=" sr-only peer">
-                <span class="w-2/5 h-4/6 bg-white absolute rounded-full left-1 top-1 peer-checked:bg-green-400 peer-checked:left-4 transition-all duration-300"></span>
+            <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" value="" class="sr-only peer">
+                <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none  rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
             </label>
         </div>
     </section>
@@ -139,6 +145,7 @@
             </a>
         </div>
     </section>
+</section>
     <script type="module" src="/src/resources/scripts/menu.js"></script>
     <script type="module" src="/src/resources/scripts/dropdown.js"></script>
 </main>
