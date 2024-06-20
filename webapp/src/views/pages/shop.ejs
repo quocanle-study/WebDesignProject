@@ -16,9 +16,9 @@
             </a>
         </div>
         <section class="select-none">
-            <div class="phone:max-tablet:flex gap-3 " id="dropdownButto</div>n">
+            <div class="phone:max-tablet:flex gap-3 relative" id="dropdownButton" >
                 <div
-                        onclick="toggleDropdownShop()"
+                        id="shopBy"
                         class="border-solid border-gray-350 border-[1px] px-5 py-2 mt-10 rounded cursor-pointer text-sm flex justify-between w-[200px] ">
                     Shop By
                     <img width="10"
@@ -27,7 +27,15 @@
 
                 </div>
                 <div
-                        onclick="toggleDropdownShop()"
+                        id="dropdownShop"
+                        class="rounded border-[1px] border-gray-300 bg-white absolute top-[50px] w-[200px] shadow-md hidden">
+                    <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
+                    <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
+                    <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
+                    <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
+                </div>
+                <div    
+                        id="sortBy"
                         class="border-solid border-gray-350 border-[1px] px-5 py-2 mt-10 rounded cursor-pointer text-sm flex justify-between w-[200px]">
                     Sort By
                     <img width="10"
@@ -36,40 +44,37 @@
 
                 </div>
                 <div
-                        id="dropdownContentShop"
-                        class="rounded border-[1px] border-gray-300 bg-white absolute top-[50px] w-[200px] shadow-md hidden">
+                        id="dropdownSort"
+                        class="rounded border-[1px] border-gray-300 bg-white absolute top-[130px] w-[200px] shadow-md hidden">
                     <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
                     <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
                     <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
                     <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
                 </div>
+                
 
             </div>
         </section>
        
         <div class="flex justify-between my-10 phone:max-tablet:hidden w-[200px] ">
             <a>On sale</a>
-            <button>
-                <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9396a6742dce943bd5ef7c4b474322b8dc1bbfb56b4b8b0e7d091f0acfc1af50?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-                        alt="On Off Button"
-                        class=""/>
-            </button>
+            <label for="checkSale" class="bg-neutral-600 w-[35px] h-[22px] rounded-full relative cursor-pointer" >
+                <input type="checkbox" id="checkSale" class=" sr-only peer">
+                <span class="w-2/5 h-4/6 bg-white absolute rounded-full left-1 top-1 peer-checked:bg-green-400 peer-checked:left-4 transition-all duration-300"></span>
+            </label>
         </div>
         <div class="flex justify-between phone:max-tablet:hidden w-[200px]">
             <a>In stock</a>
-            <button>
-                <img
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/9396a6742dce943bd5ef7c4b474322b8dc1bbfb56b4b8b0e7d091f0acfc1af50?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-                        alt="On Off Button"
-                        class=""/>
-            </button>
+            <label for="checkStock" class="bg-neutral-600 w-[35px] h-[22px] rounded-full relative cursor-pointer" >
+                <input type="checkbox" id="checkStock" class=" sr-only peer">
+                <span class="w-2/5 h-4/6 bg-white absolute rounded-full left-1 top-1 peer-checked:bg-green-400 peer-checked:left-4 transition-all duration-300"></span>
+            </label>
         </div>
     </section>
 
     <!-- Products -->
     <section
-            class=" grid gap-3 phone:grid-cols-2  phone:max-tablet:justify-center tablet:grid-cols-2 tablet:col-span-2 laptop:col-span-3 laptop:grid-cols-3 tablet:w-[calc(1200px-650px)] laptop:w-[calc(1200px-400px)] desktop:grid-cols-4 desktop:w-[calc(1600px-550px)]">
+            class=" grid gap-3 phone:grid-cols-2  phone:max-tablet:justify-center tablet:grid-cols-2 tablet:col-span-2 laptop:col-span-3 laptop:grid-cols-3 tablet:w-[calc(1200px-650px)] laptop:w-[calc(1200px-400px)] ">
         <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]   ">
             <a href="/product">
                 <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg')] bg-cover bg-center">
@@ -77,7 +82,7 @@
                         <span class="bg-stone-500 rounded-sm">Sold out</span>
                     </section>
                 </div>
-                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3 desktop:text-2xl">Product</h3>
+                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
                 <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
                     <font color="#a28b68">$20,000</font>
                 </h4>
@@ -87,7 +92,7 @@
             <a href="/product">
                 <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]   bg-[url('https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3 desktop:text-2xl">Product</h3>
+                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
                 <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
                     <font color="#a28b68">$20,000</font>
                 </h4>
@@ -97,7 +102,7 @@
             <a href="product">
                 <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3 desktop:text-2xl">Product</h3>
+                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
                 <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
                     <font color="#a28b68">$20,000</font>
                 </h4>
@@ -107,7 +112,7 @@
             <a href="/product">
                 <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3 desktop:text-2xl">Product</h3>
+                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
                 <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
                     <font color="#a28b68">$20,000</font>
                 </h4>
@@ -117,7 +122,7 @@
             <a href="/product">
                 <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3 desktop:text-2xl">Product</h3>
+                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
                 <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
                     <font color="#a28b68">$20,000</font>
                 </h4>
@@ -127,11 +132,13 @@
             <a href="/product">
                 <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3 desktop:text-2xl">Product</h3>
+                <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
                 <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
     </section>
+    <script type="module" src="/src/resources/scripts/menu.js"></script>
+    <script type="module" src="/src/resources/scripts/dropdown.js"></script>
 </main>
