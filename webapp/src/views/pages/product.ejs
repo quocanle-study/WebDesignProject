@@ -1,37 +1,39 @@
 <div class="new-product-head-wrap flex flex-wrap relative mx-[200px] max-w-[1200px] max-[431px]:mx-0">
-    <div class="new-product-images w-full md:w-2/3">
-        <div
-                class="swiper mx-auto relative overflow-hidden list-none p-0 z-10"
-                style="--data-xs: 1"
-        >
-            <div class="swiper-wrapper flex transition-transform box-content">
-                <div class="swiper-slide flex-shrink-0 w-full h-full relative">
-                    <a
-                            href="#galleryImage-item1"
-                            class="zoom relative overflow-hidden"
-                            id="style-hoWwR"
-                    >
-                        <img
-                                class="pr-5 dt-width-100 img-fluid ls-is-cached lazyloaded w-full h-auto"
-                                width="480"
-                                height="480"
-                                src="https://product.hstatic.net/200000103143/product/592790c01_rgb_3cc4b266bdce4cdc9d99415c2f6c79c4_214a98c78f21435e894b35337624d93c_master.jpg"
-                                data-src="//product.hstatic.net/200000103143/product/592790c01_rgb_3cc4b266bdce4cdc9d99415c2f6c79c4_214a98c78f21435e894b35337624d93c_master.jpg"
-                                alt=""
-                        />
-                    </a>
-                </div>
-            </div>
-            <div
-                    class="swiper-pagination absolute text-center transition-opacity transform translate3d-0 z-10"
-            ></div>
-            <div
-                    class="swiper-button-next absolute top-1/2 w-[calc(var(--swiper-navigation-size)/44*27)] h-[var(--swiper-navigation-size)] mt-[-calc(var(--swiper-navigation-size)/2)] z-10 cursor-pointer flex items-center justify-center text-[var(--swiper-navigation-color,var(--swiper-theme-color))] right-2.5 left-auto"
-            ></div>
-            <div
-                    class="swiper-button-prev absolute top-1/2 w-[calc(var(--swiper-navigation-size)/44*27)] h-[var(--swiper-navigation-size)] mt-[-calc(var(--swiper-navigation-size)/2)] z-10 cursor-pointer flex items-center justify-center text-[var(--swiper-navigation-color,var(--swiper-theme-color))] left-2.5 right-auto"
-            ></div>
+    <div class="slideshow-container relative my-10 phone:max-tablet:hidden max-[431px]:mx-0 w-[600px] h-[600px]">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade phone:w-full tablet:w-[full] tablet:max-w-[1200px] ">
+            <div class="numbertext"></div>
+            <img
+                    src="https://product.hstatic.net/200000103143/product/592790c01_rgb_3cc4b266bdce4cdc9d99415c2f6c79c4_214a98c78f21435e894b35337624d93c_master.jpg"
+                    class="w-[600px] h-[600px] max-w-[1200px]: object-cover"
+                    alt="Image 1"
+            />
+
         </div>
+    
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img
+                    src="/asset/banner/slide2.webp"
+                    class="w-[600px] h-[600px] hidden"
+                    alt="Image 1"
+            />
+        </div>
+    
+        <!-- ... (similarly for other slides) ... -->
+    
+        <!-- Next and previous buttons -->
+    
+        <a
+                class="prev cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out rounded-r-md hover:bg-black hover:text-white"
+                onclick="plusSlides(-1)"
+        >&#10094;</a
+        >
+        <a
+                class="next cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out hover:bg-black hover:text-white rounded-l-md"
+                onclick="plusSlides(1)"
+        >&#10095;</a
+        >
     </div>
     <div
             class="new-product-info w-full md:w-1/3 max-w-[360px] mx-auto sticky top-[140px] h-min-content md:max-w-[85%] md:mt-4"
@@ -171,7 +173,7 @@
                                 />
                                 <label
                                         for="swatch-1-s1"
-                                        class="sd block mx-2.5 my-2.5 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300"
+                                        class="sd block mx-2.5 my-2.5 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300 focus:bg-black"
                                 ><span>S1</span></label
                                 >
                             </div>
@@ -268,7 +270,7 @@
     <div class="new-product-contents my-12.5">
         <div class="new-product-content border-b border-gray-300 mb-3.75">
             <h3
-                    class="font-roboto cursor-pointer font-bold text-[25px] flex flex-wrap items-center justify-between pb-3.75 mb-0"
+                    class="font-roboto cursor-pointer font-bold text-[25px] flex flex-wrap items-center justify-between pb-3.75 mt-5"
             >
                 Product information<span
                         class="active opacity-50 w-5 text-center"
@@ -283,7 +285,7 @@
                 bracelet will enhance the unique beauty of your favorite pieces of
                 jewelry. Let it become a timeless work of art on your wrist
             </p>
-            <p class="font-roboto mt-2.5 mb-0 text-xl mb-4">
+            <p class="font-roboto mt-2.5 text-xl mb-5">
                 Collection:&nbsp;Pandora
                 <span
                         class="font-roboto text-xl text-black font-normal not-italic no-underline font-[Arial]"
@@ -301,7 +303,7 @@
             data-id="1051064861"
             data-customer=""
     ></div>
-    <div class="new-product-ps mt-4 mb-7">
+    <div class="new-product-ps mt-5 mb-5">
         <ul
                 class="max-w-4/5 mx-auto flex flex-wrap justify-between items-start"
         >
@@ -356,143 +358,88 @@
     </h3>
     <!-- Product Grid -->   
     <section
-            class="grid justify-items-center phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4 max-tablet:flex max-tablet:flex-col max-[431px]:flex max-[431px]:items-center"
-    >
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
+            class="grid justify-items-center phone:grid-cols-2 phone:col-span-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4 max-[430px]:mx-[200px]  max-[431px]:mx-0 max-tablet:flex max-tablet:flex-col max-[431px]:items-center tablet:w-[calc(1000px-200px)] laptop:w-[calc(1200px-100px)]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
             <a href="/product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
                 <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
             <a href="/product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
                 <h4 class="text-center text-[12px] desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
             <a href="product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
                 <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
             <a href="/product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product4.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
                 <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
             <a href="/product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product5.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
                 <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
             <a href="/product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base ">
+                    <font color="#a28b68">$20,000</font>
+                </h4>
+            </a>
+        </div>
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <a href="/product">
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
                 <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
             <a href="/product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
-                    <font color="#a28b68">$20,000</font>
-                </h4>
-            </a>
-        </div>
-        <div
-                class="mb-32 phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64"
-        >
-            <a href="/product">
-                <div
-                        class="bg-red rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center"
-                ></div>
-                <h3
-                        class="font-roboto text-bold text-xl mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base"
-                >
-                    Product
-                </h3>
+                <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
+                </div>
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
                 <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
     </section>
+    
+<script type="module" src="/src/resources/scripts/productslide.js"></script>
 </div>
