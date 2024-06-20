@@ -8,9 +8,9 @@
         Red Velvet x PANDORA
     </div>
 </div>
-<div class="slideshow-container relative my-10 col phone:max-tablet:hidden  ">
+<div class="slideshow-container relative my-10 phone:max-tablet:hidden mx-[200px] max-w-[1200px] max-[431px]:mx-0">
     <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade phone:w-full tablet:w-full">
+    <div class="mySlides fade phone:w-full tablet:w-full ">
         <div class="numbertext"></div>
         <img
                 src="/asset/banner/slide1.webp"
@@ -55,7 +55,7 @@
 </div>
 
 <!-- The dots/circles -->
-<div class="text-center">
+<div class="text-center mx-[200px] max-w-[1200px] max-[431px]:mx-0">
       <span
               class="dot cursor-pointer tablet:h-4 tablet:w-4 m-2 bg-gray-300 rounded-full inline-block transition duration-600 ease hover:bg-gray-700 phone:h-2 phone:w-2 "
       ></span>
@@ -67,7 +67,7 @@
 
 <main>
     <section
-            class="flex gap-5 mt-14 font-medium max-md:flex-wrap max-md:mt-10 max-md:mr-1.5 max-md:max-w-full my-10 col"
+            class="flex gap-5 mt-14 font-medium max-md:flex-wrap max-md:mt-10 max-md:mr-1.5 max-md:max-w-full my-10 mx-[200px] max-w-[1200px] max-[431px]:mx-0 max-[431px]:mx-4"
     >
         <h2 class="flex-auto tablet:text-4xl phone:text-2xl leading-10 text-black ">
             Shop The Latest
@@ -80,85 +80,92 @@
         </a>
     </section>
 
+    <style>
+        #products {
+            margin-top: calc(1200px - (300px*4));
+            margin-bottom: calc(1200px - (300px*4));
+        }
+    </style>
+
     <!-- Product Grid -->
     <section
-            class="grid col justify-items-center phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4">
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+            class="grid justify-items-center phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4 max-[430px]:mx-[200px] mx-[200px] max-w-[1200px] max-[431px]:mx-0 max-tablet:flex max-tablet:flex-col max-[431px]:flex max-[431px]:items-center">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="/product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[320px] tablet:w-[320px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="/product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-center text-[12px] desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-center text-[12px] desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px]  tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="/product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product4.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product4.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="/product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product5.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product5.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="/product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px]  tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base ">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="/product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px]  tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
         </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
+        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] max-tablet:mb-64">
             <a href="/product">
-                <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
+                <div class="rounded-lg phone:h-[200px] phone:w-[200px]  tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] sm:h-[320px] sm:w-[320px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
                 </div>
-                <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-                <h4 class="text-[12px] text-center desktop:text-[18px]">
+                <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl sm:text-base">Product</h3>
+                <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] sm:text-base">
                     <font color="#a28b68">$20,000</font>
                 </h4>
             </a>
@@ -166,7 +173,7 @@
     </section>
 </main>
 
-<section class="col phone:max-tablet:hidden h-[85vh] desktop:h-[600px] flex justify-center items-center bg-black">
+<section class="phone:max-tablet:hidden h-[85vh] desktop:h-[600px] flex justify-center items-center bg-black mx-[200px] max-w-[1200px] max-[431px]:mx-0">
     <div class="flex">
         <img src="/asset/product/thietkebanner.jpg" alt="" class="  tablet:h-[80%] desktop:h-[100%]">
         <div class="flex justify-center items-center w-[55rem] h-[35.25rem] bg-white">
