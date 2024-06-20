@@ -14,18 +14,38 @@ datasource db {
 
 // TODO: Add the data schema for your application here
 
-model User {
-  id    Int     @id @default(autoincrement())
-  name  String
-  email String  @unique
-  posts Post[]
+model Product {
+  id       Int       @id @default(autoincrement())
+  name     String
+  description String
+  price    Float
+  productCategories ProductCategory[]
+  images   ProductImage[]
 }
 
-model Post {
+model Category {
+  id       Int       @id @default(autoincrement())
+  name     String
+  productCategories ProductCategory[]
+}
+
+model ProductCategory {
+  productId  Int
+  categoryId Int
+  product    Product @relation(fields: [productId], references: [id])
+  category   Category @relation(fields: [categoryId], references: [id])
+
+  @@id([productId, categoryId])
+}
+
+model ProductImage {
   id        Int      @id @default(autoincrement())
-  title     String
-  content   String?
-  published Boolean  @default(false)
-  author    User     @relation(fields: [authorId], references: [id])
-  authorId  Int
+  productId Int
+  imageUrl  String
+  product   Product @relation(fields: [productId], references: [id])
+}
+
+model SortOption {
+  id   Int    @id @default(autoincrement())
+  name String
 }
