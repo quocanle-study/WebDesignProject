@@ -5,7 +5,7 @@
         <div class="mySlides fade phone:w-full tablet:w-[full] tablet:max-w-[1200px] ">
             <div class="numbertext"></div>
             <img
-                    src="https://product.hstatic.net/200000103143/product/592790c01_rgb_3cc4b266bdce4cdc9d99415c2f6c79c4_214a98c78f21435e894b35337624d93c_master.jpg"
+                    src="<%= product.image1_url %>"
                     class="w-[600px] h-[600px] max-w-[1200px]:object-cover"
                     alt="Image 1"
             />
@@ -15,7 +15,7 @@
         <div class="mySlides fade">
             <div class="numbertext"></div>
             <img
-                    src="https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg"
+                    src="<%= product.image2_url %>"
                     class="w-[600px] h-[600px]"
                     alt="Image 2"
             />
@@ -23,7 +23,7 @@
         <div class="mySlides fade">
             <div class="numbertext"></div>
             <img
-                    src="https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg"
+                    src="<%= product.image3_url %>"
                     class="w-[600px] h-[600px]"
                     alt="Image 3"
             />
@@ -31,7 +31,7 @@
         <div class="mySlides fade">
             <div class="numbertext"></div>
             <img
-                    src="https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg"
+                    src="<%= product.image4_url %>"
                     class="w-[600px] h-[600px]"
                     alt="Image 4"
             />
@@ -39,7 +39,7 @@
         <div class="mySlides fade">
             <div class="numbertext"></div>
             <img
-                    src="https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg"
+                    src="<%= product.image5_url %>"
                     class="w-[600px] h-[600px]"
                     alt="Image 5"
             />
@@ -69,14 +69,14 @@
             <span></span>
         </div>
         <h1 class="font-roboto new-product-title font-bold text-[25px] mt-2.5 text-center">
-            Silver Ring Covered in Blue Leather
+            <%= product.name %>
         </h1>
         <div
                 class="new-product-info-prices flex justify-center items-center text-sm"
         >
             <b
                     class="bg-pink-200 text-gray-800 inline-block px-2.5 py-1 font-bold mx-1.5"
-            >£30.00</b
+            >£<%= product.price %></b
             >
             <del class="mx-1.5">£0</del>
             <span

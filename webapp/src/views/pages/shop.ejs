@@ -148,7 +148,7 @@
         </div>
         <% product.forEach(function(product) { %>
             <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  ">
-                <a href="/product">
+                <a href="/product?id=<%= product.id %>">
                     <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  bg-[url('<%= product.image1_url %>')] bg-cover bg-center">
                     </div>
                     <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3"><%= product.name %></h3>
