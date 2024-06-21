@@ -21,3 +21,11 @@
 3. Product Page
 
 4. About Us Page
+
+#### Add JavaScript to website, connect database (14/06/2024)
+
+1. Home Page
+
+2. Shop Page
+
+3. Product Page
