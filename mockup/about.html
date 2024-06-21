@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="./src/font/boxicons-2.1.4/boxicons-2.1.4/css/boxicons.css">
     <title>Document</title>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+<link
+      rel="stylesheet"
+      href="./src/font/boxicons-2.1.4/boxicons-2.1.4/css/boxicons.css"
+    />
+    <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+    html, body, label  {
+      height: 2000px;
+    }
     body {
-        font-family: "DM Sans", sans-serif;
-        height: 2000px;
+      font-family:'Roboto', sans-serif;
     }
-    html {
-        
-    }
-
     .col {
       width: 92.5%;
       margin-left: auto;
       margin-right: auto;
     }
-</style>
-<body>
+  </style>
     <!-- Navigation Bar -->
  <header class="flex flex-row col justify-between border-b-2 bg-white my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 " >
   <div class="flex flex-row mt-1 ml-2 tablet:hidden ">
@@ -79,23 +80,23 @@
 <!-- Navigation Bar -->    
 
       <div class="flex flex-col w-5/6 h-auto ml-auto mr-auto mt-24 text-center font-medium">
-        <span class="text-4xl">About</span>
-        <span class="my-6">Passionate Innovators, Driving Positive Change!</span>
-        <span class="text-left">LBJ Jewelry is a renowned brand in the jewelry industry, driven by passion and dedication to every intricate detail. Established in 2024, LBJ has quickly solidified its position in the market thanks to the quality of its products and sophisticated designs.</span>
-        <span class="text-2xl text-left mt-9">Top trends</span>
-        <video class="h-full w-full rounded-lg" autoreplay autoPlay muted>
+        <span class="font-roboto mb-2.5  text-6xl   ">About</span>
+        <span class="font-roboto mb-2.5 leading-5 my-8 my-6  md:w-[calc(33.3333%-20px)] ">Passionate Innovators, Driving Positive Change!</span>
+        <span class="font-roboto mb-2.5 leading-5 my-8  text-left md:w-[calc(33.3333%-20px)] " >LBJ Jewelry is a renowned brand in the jewelry industry, driven by passion and dedication to every intricate detail. Established in 2024, LBJ has quickly solidified its position in the market thanks to the quality of its products and sophisticated designs.</span>
+        <span class="font-roboto mb-2.5 leading-5 my-8  text-2xl text-left mt-9  md:w-[calc(33.3333%-20px)] ">Top trends</span>
+        <video class="object-cover h-48 w-96" autoreplay autoPlay muted>
           <source src="vid/vid1.mp4" type="video/mp4" />
         </video>
-        <span class="text-left mt-4">At LBJ Jewelry, we pride ourselves on staying ahead of the curve and setting trends in the jewelry industry. Here are the top jewelry trends that define elegance and sophistication, all embodied in LBJ's latest collections. </span>
-        <ul class="text-left mt-5 ml-6 space-y-2">
+        <span class="font-roboto mb-2.5 leading-5 my-8 text-left mt-4 md:w-[calc(33.3333%-20px)] ">At LBJ Jewelry, we pride ourselves on staying ahead of the curve and setting trends in the jewelry industry. Here are the top jewelry trends that define elegance and sophistication, all embodied in LBJ's latest collections. </span>
+        <ul class="font-roboto mb-2.5 leading-5 my-8  text-left mt-5 ml-6 space-y-2   ">
             <li>● Sustainable Jewelry</li>
             <li>● Minimalist Designs</li>
         </ul>
-        <span class="text-2xl text-left mt-14">Produced with care</span>
-        <video className="h-full w-full rounded-lg" autoreplay autoPlay muted>
+        <span class="font-roboto mb-2.5 leading-5 my-8 text-2xl text-left mt-14  md:w-[calc(33.3333%-20px)] ">Produced with care</span>
+        <video className="object-cover h-48 w-96" autoreplay autoPlay muted>
           <source src="vid/vid2.mp4" type="video/mp4" />
         </video>
-        <span class="text-left mt-4">LBJ takes pride in its diverse jewelry collections, from rings, necklaces, and earrings to bracelets. Each piece is designed with meticulous attention to detail and creativity, blending classic and contemporary styles. LBJ’s designs are not just jewelry; they are works of art that bring beauty and confidence to the wearer.
+        <span class="font-roboto mb-2.5 leading-5my-8  text-left mt-4  md:w-[calc(33.3333%-20px)] " >LBJ takes pride in its diverse jewelry collections, from rings, necklaces, and earrings to bracelets. Each piece is designed with meticulous attention to detail and creativity, blending classic and contemporary styles. LBJ’s designs are not just jewelry; they are works of art that bring beauty and confidence to the wearer.
         </span>
       </div>
 
@@ -104,9 +105,9 @@
     <section class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex">
       <div class="flex gap-5 mt-10 phone:flex-col">
         <div>
-          <a href="" class="text-gray-500 mr-10">CONTACT</a>
-          <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
-          <a href="" class="text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
+          <a href="" class="font-roboto text-gray-500 mr-10">CONTACT</a>
+          <a href="" class="font-roboto text-gray-500 mr-10">TERMS OF SERVICES</a>
+          <a href="" class="font-roboto text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
         </div>
     </div>
         <div class="border-b-2 border-black">
@@ -121,9 +122,9 @@
     <section class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10 ">
       <div>
         © 2024 LBJ.
-        <a href="#" class="text-gray-500">Terms of use</a>
+        <a href="#" class="font-roboto text-gray-500">Terms of use</a>
         and
-        <a href="#" class="text-gray-500">Privacy Policy</a>
+        <a href="#" class="font-roboto text-gray-500">Privacy Policy</a>
       </div>
       <div class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0 phone:max-tablet:justify-center">
         <a href="#">
