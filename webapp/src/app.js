@@ -13,6 +13,9 @@ import cookieParser from 'cookie-parser';
 import csrf from 'csurf';
 import rateLimit from 'express-rate-limit';
 import assets from './configs/assets.js';
+// Sentry
+// import '../sentry.js';
+// import * as Sentry from '@sentry/node';
 
 const csrfProtection = csrf({ cookie: true });
 
@@ -110,5 +113,23 @@ app.use((err, req, res, next) => {
         return res.status(500).render('500', { error: err });
     }
 });
+
+// Sentry Express request handler
+// app.get("/", function rootHandler(req, res) {
+//     res.end("Hello world!");
+// });
+
+// Sentry.setupExpressErrorHandler(app);
+
+// app.use(function onError(err, req, res, next) {
+//     // The error id is attached to `res.sentry` to be returned
+//     // and optionally displayed to the user for support.
+//     res.statusCode = 500;
+//     res.end(res.sentry + "\n");
+// });
+
+// app.get("/debug-sentry", function mainHandler(req, res) {
+//     throw new Error("My first Sentry error!");
+// });
 
 export default app;

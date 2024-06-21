@@ -2,7 +2,7 @@
   "name": "express-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
     "start": "cross-env NODE_ENV=production node src/server.js",
@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^5.15.0",
+    "@sentry/node": "^8.10.0",
+    "@sentry/profiling-node": "^8.10.0",
     "autoprefixer": "^10.4.19",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
