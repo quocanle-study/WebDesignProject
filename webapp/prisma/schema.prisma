@@ -14,6 +14,20 @@ datasource db {
 
 // TODO: Add the data schema for your application here
 
+model Product {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+  price       Decimal
+  category    String
+  image1_url  String?
+  image2_url  String?
+  image3_url  String?
+  image4_url  String?
+  image5_url  String?
+  image6_url  String?
+}
+
 model Products {
   id            Int             @id @default(autoincrement())
   name          String
