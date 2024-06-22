@@ -146,18 +146,19 @@
                 </h4>
             </a>
         </div>
-        <% product.forEach(function(product) { %>
-            <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  ">
-                <a href="/product?id=<%= product.id %>">
-                    <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]  bg-[url('<%= product.image1_url %>')] bg-cover bg-center">
+        <% products.forEach(function(item) { %>
+            <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px] ">
+                <a href="/product?id=<%= item.id %>">
+                    <div class="bg-gray-50 rounded phone:h-[200px] phone:w-[200px] tablet:w-[260px] tablet:h-[260px]">
+                        <img src="<%= item.images[0] %>" alt="<%= item.name %>" class="rounded w-full h-full object-cover">
                     </div>
-                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3"><%= product.name %></h3>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3"><%= item.name %></h3>
                     <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
-                        <font color="#a28b68">$<%= product.price %></font>
+                        <font color="#a28b68">$<%= item.price - item.sales %></font>
                     </h4>
                 </a>
             </div>
-        <% }); %>
+            <% }); %>
     </section>
 </section>
 </section>
