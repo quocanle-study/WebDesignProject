@@ -12,6 +12,8 @@ const getProducts = async (req, res) => {
                 images: true, // Assuming 'images' is the correct relation name
             },
         });
+
+        console.log(req.query.q);
     
         if (!products || products.length === 0) {
             throw new Error('No products found');

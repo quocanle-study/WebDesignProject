@@ -34,6 +34,7 @@ model Product {
   productCode           String?         @db.VarChar(255)
   productClassification String?         @db.VarChar(255)
   color                 String?         @db.VarChar(255)
+  quantity     Int?
   productCategory       ProductCategory? @relation(fields: [productCategoryId], references: [id])
   images                ProductImage[]
 
