@@ -1,55 +1,39 @@
-<div class="new-product-head-wrap flex flex-wrap relative mx-[200px] max-w-[1200px] max-[431px]:mx-0">
-    <div class="slideshow-container relative my-10 phone:min-tablet:hidden max-[431px]:mx-0 w-[600px] h-[600px] max-[431px]:w-[300px] max-[431px]:h-[300px] max-[431px]:ml-[70px]">
+<section class="grid justify-center laptop:ml-28">
+<div class="new-product-head-wrap flex flex-wrap relative mx-[200px] max-w-[1200px] max-[431px]:mx-0 laptop:w-[calc(1400px-200px)] phone:max-tablet:grid phone:max-tablet:justify-center phone:max-tablet:p-10 ">
+    <div class="slideshow-container relative mb-2 laptop:mt-5 phone:min-tablet:hidden max-[431px]:mx-0  border-2 border-gray-700 tablet:w-[605px] tablet:h-[555px]">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade phone:w-full tablet:w-[full] tablet:max-w-[1200px] ">
             <div class="numbertext"></div>
             <img
-                    src="<%= product.images[0] %>"
-                    class="w-[600px] h-[600px] max-w-[1200px]: object-cover max-[431px]:w-[300px] max-[431px]:h-[300px]"
-                    alt="Image 1"
-            />
-
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img
-                    src="/asset/banner/slide2.webp"
-                    class="w-[600px] h-[600px] hidden"
-                    alt="Image 1"
-            />
-            <div class="mySlides fade">
-                <div class="numbertext"></div>
-            <img    src="https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg"
-                    class="w-[600px] h-[600px]"
-                    alt="Image 2"
-            />
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img
-                    src="<%= product.image3_url %>"
-                    class="w-[600px] h-[600px]"
-                    alt="Image 3"
-            />
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img
-                    src="<%= product.image4_url %>"
-                    class="w-[600px] h-[600px]"
-                    alt="Image 4"
-            />
-        </div>
-        <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img
-                    src="<%= product.image5_url %>"
-                    class="w-[600px] h-[600px]"
-                    alt="Image 5"
-                    />
-            </div>
-        </div>
+            src="https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg"
+            class="w-[600px] h-[550px] phone:max-tablet:w-full phone:max-tablet:h-full"
+            alt="Image 2"
+    />
+</div>
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img
+            src="https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg"
+            class="w-[600px] h-[550px] phone:max-tablet:w-full phone:max-tablet:h-full"
+            alt="Image 3"
+    />
+</div>
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img
+            src="https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg"
+            class="w-[600px] h-[550px] phone:max-tablet:w-full phone:max-tablet:h-full"
+            alt="Image 4"
+    />
+</div>
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img
+            src="https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg"
+            class="w-[600px] h-[550px] phone:max-tablet:w-full phone:max-tablet:h-full"
+            alt="Image 5"
+    />
+</div>
     
         <!-- ... (similarly for other slides) ... -->
     
@@ -66,27 +50,27 @@
         >&#10095;</a
         >
     </div>
-    <div class="flex ml-[200px] gap-6 min-laptop:hidden max-[431px]:ml-10 min-[431px]:hidden">
+    <div class="flex gap-6 min-laptop:hidden min-[431px]:hidden phone:mb-5">
         <img 
             src="https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg" 
             alt="Image 1" 
-            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100">
+            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 hover:border hover:border-gray-700">
         <img 
             src="https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg" 
             alt="Image 2" 
-            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100">
+            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 hover:border hover:border-gray-700">
         <img 
             src="https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg" 
             alt="Image 3" 
-            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100">
+            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 hover:border hover:border-gray-700">
         <img 
             src="https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg" 
             alt="Image 4" 
-            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 max-laptop:hidden">    
+            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 hover:border hover:border-gray-700 max-laptop:hidden">    
         <img 
             src="https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg" 
             alt="Image 5" 
-            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 max-laptop:hidden">    
+            class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 hover:border hover:border-gray-700 max-laptop:hidden">    
     </div>
     <div
             class="new-product-info w-full md:w-1/3 max-w-[360px] mx-auto sticky top-[140px] h-min-content md:max-w-[85%] md:mt-4"
@@ -96,8 +80,8 @@
         >
             <span></span>
         </div>
-        <h1 class="font-roboto new-product-title font-bold text-[25px] mt-2.5 text-center">
-            <%= product.name %>
+        <h1 class="font-roboto new-product-title font-bold text-[25px] mt-2.5">
+            Silver Ring Covered in Blue Leather
         </h1>
         <div
                 class="new-product-info-prices flex justify-center items-center text-sm"
@@ -298,7 +282,7 @@
                     data-price="2090000"
                     data-title="Vòng Bạc Pandora Bọc Da Màu Xanh"
                     id="onAppWishList_btn_remove"
-                    class="hidden w-full h-11 bg-transparent text-2xl text-gray-800 flex justify-center items-center"
+                    class=" w-full h-11 bg-transparent text-2xl text-gray-800 flex justify-center items-center"
             >
               <i class="fa fa-heart"></i>
               <span class="hidden text-sm ml-2.5">Xoá khỏi yêu thích</span>
@@ -319,40 +303,41 @@
     </div>
 </div>
 
-<div class="flex ml-[200px] gap-6 min-laptop:hidden max-[431px]:ml-10 max-[431px]:hidden">
+<div class="flex ml-[200px] gap-6 min-laptop:hidden max-[431px]:ml-10 max-[431px]:hidden mb-10">
     <img 
         src="https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg" 
         alt="Image 1" 
-        class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100">
+        class="w-[100px] h-[100px] object-cover opacity-50 hover:opacity-100 hover:border hover:border-gray-700">
     <img 
         src="https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg" 
         alt="Image 2" 
-        class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100">
+        class="w-[100px] h-[100px] object-cover opacity-50 hover:opacity-100 hover:border hover:border-gray-700">
     <img 
         src="https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg" 
         alt="Image 3" 
-        class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100">
+        class="w-[100px] h-[100px] object-cover opacity-50 hover:opacity-100 hover:border hover:border-gray-700">
     <img 
         src="https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg" 
         alt="Image 4" 
-        class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 max-laptop:hidden">    
+        class="w-[100px] h-[100px] object-cover opacity-50 hover:opacity-100 hover:border hover:border-gray-700 max-laptop:hidden">    
     <img 
         src="https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg" 
         alt="Image 5" 
-        class="w-[100px] h-[100px] object-cover opacity-40 hover:opacity-100 max-laptop:hidden">    
+        class="w-[100px] h-[100px] object-cover opacity-50 hover:opacity-100 hover:border hover:border-gray-700 max-laptop:hidden">    
 </div>
 
 <div class="new-container sm:mt-10 max-sm:mx-10 mx-[200px] max-w-[1200px] max-[431px]:mx-0">
-    <div class="new-product-contents my-12.5">
-        <div class="max-[431px]:ml-4 new-product-content border-b border-gray-300 mb-3.75">
+    <div class="new-product-contents mt-10">
+        <div class="max-[431px]:ml-4 new-product-content border-b border-gray-300 my-10">
             <h3
-                    class="font-roboto cursor-pointer font-bold text-2xl flex flex-wrap items-center justify-between pb-3.75 mt-5"
+                    class="font-roboto cursor-pointer font-bold text-2xl flex flex-wrap items-center justify-between pb-3.75"
             >
-                Product information<span
+                <a class="border-b-2 border-yellow-700 my-3">Product information</a>
+                <span
                         class="active opacity-50 w-5 text-center"
                 ></span>
             </h3>
-            <p class="tracking-wide font-roboto mt-2 mb-3 leading-5 text-lg">
+            <p class="tracking-wide font-roboto mt-2 mb-3 leading-5 text-lg max-w-[1100px] mx-[50px] phone:max-tablet:mx-0">
                 Like an adventure under the ocean and like a peaceful walk in the
                 night sky. The Pandora Moments Round Clasp Blue Braided Woven
                 Leather Bracelet is woven from delicate dark blue leather straps,
@@ -361,10 +346,10 @@
                 bracelet will enhance the unique beauty of your favorite pieces of
                 jewelry. Let it become a timeless work of art on your wrist
             </p>
-            <p class="tracking-wide font-roboto mt-2.5 text-lg mb-5">
+            <p class="tracking-wide font-roboto mt-2.5 text-lg mb-5 mx-[50px] phone:max-tablet:mx-0">
                 Collection:&nbsp;Pandora
                 <span
-                        class="font-roboto text-xl text-black font-normal not-italic no-underline font-[Arial]"
+                        class="font-roboto text-xl text-black not-italic no-underline"
                 >Moments</span
                 ><br/>Product code:&nbsp;592790C01<br/>Product
                 classification:&nbsp;Bracelet<br/>Material:&nbsp;Leather<br/>Color:&nbsp;Green
@@ -379,144 +364,100 @@
             data-id="1051064861"
             data-customer=""
     ></div>
-    <div class="new-product-ps mt-5 mb-5 max-[431px]:ml-4">
-        <ul
-                class="max-w-4/5 mx-auto flex flex-wrap justify-between items-start"
-        >
-            <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
-                <h4 class="font-roboto font-semibold text-2xl leading-7 text-black mb-3">
-                    Exchange policy
-                </h4>
-                <p class="tracking-wide font-roboto text-lg mb-2.5 leading-5">
-                    The exchange policy only applies to products with technical
-                    defects and at full price. The one-for-one exchange policy applies
-                    within 15 days from the date of receipt and can only be exchanged
-                    once.
-                </p>
-            </li>
-            <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
-                <h4 class="font-roboto font-semibold  text-2xl leading-7 text-black mb-3">
-                    Give a gift
-                </h4>
-                <p class="tracking-wide mb-2.5 leading-5 text-lg">
-                    Do you want to send Pandora jewelry to someone special? Just
-                    choose the product you want to give, our customer service staff
-                    will personally wrap the gift and write the message you want to
-                    send to the gift recipient. Just make a note on your order when
-                    ordering! Pandora will contact you shortly!
-                </p>
-            </li>
-            <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
-                <h4 class="font-roboto font-semibold text-2xl leading-7 text-black mb-3">
-                    Free shipping
-                </h4>
-                <p class="tracking-wide font-roboto mb-2.5 leading-5 text-lg">
-                    Pandora offers free shipping nationwide for all order values.
-                </p>
-            </li>
-            <li class="w-full sm:w-1/2 lg:w-1/5 md:my-2.5">
-                <h4 class="font-roboto font-semibold text-2xl leading-7 text-black mb-3">
-                    Preservation method
-                </h4>
-                <p class="tracking-wide font-roboto mb-2.5 leading-5 text-lg">
-                    The product should be cleaned with Pandora's specialized product
-                    cleaning kit and after use, please clean and store in a sealed box
-                    to avoid exposure to air and oxidation.
-                </p>
-            </li>
-        </ul>
-    </div>
+    
 
     <h3
-            class="max-[431px]:ml-4 font-roboto mb-10 cursor-pointer font-bold text-[25px] flex flex-wrap items-center justify-between pb-3.75 mb-0"
-    >
-        Related products<span class="active opacity-50 w-5 text-center"></span>
+            class="max-[431px]:ml-4 font-roboto cursor-pointer font-bold text-[25px] flex flex-wrap items-center justify-between pb-3.75 mb-10 mt-10"
+        >
+        <a class="border-b-2 border-yellow-700">Related products</a>
+        <span class="active opacity-50 w-5 text-center"></span>
     </h3>
     <!-- Product Grid -->   
     <section class="grid justify-center">
         <section
                 class="grid phone:grid-cols-2 tablet:grid-cols-3  laptop:grid-cols-4 tablet:mx-[200px] tablet:w-[calc(1000px-200px)] laptop:w-[calc(1200px-100px)] phone:w-[calc(500px-120px)] max-w-[1200px]">
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px]">
-                        <font color="#a28b68">$20,000</font>
-                    </h4>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                    <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
+                </h4>
                 </a>
             </div>
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-center text-[12px] desktop:text-[18px] max-[431px]:text-[11px]">
-                        <font color="#a28b68">$20,000</font>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                    <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
                     </h4>
                 </a>
             </div>
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px]">
-                        <font color="#a28b68">$20,000</font>
-                    </h4>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
+                </h4>
                 </a>
             </div>
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product4.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px]">
-                        <font color="#a28b68">$20,000</font>
-                    </h4>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
+                </h4>
                 </a>
             </div>
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product5.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px]">
-                        <font color="#a28b68">$20,000</font>
-                    </h4>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
+                </h4>
                 </a>
             </div>
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px] ">
-                        <font color="#a28b68">$20,000</font>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                    <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
                     </h4>
                 </a>
             </div>
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px]">
-                        <font color="#a28b68">$20,000</font>
-                    </h4>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
+                </h4>
                 </a>
             </div>
-            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] ">
+            <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px]  tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
                     </div>
-                    <h3 class="font-roboto text-bold text-xl  mt-3 text-center phone:text-[13px]">Product</h3>
-                    <h4 class="text-[12px] text-center desktop:text-[18px] max-[431px]:text-[11px]">
-                        <font color="#a28b68">$20,000</font>
-                    </h4>
+                    <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">Product</h3>
+                <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                    <font color="#a28b68">$20,000</font>
+                </h4>
             </a>
         </div>
     </section>
+</section>
 
 <script type="module" src="/src/resources/scripts/menu.js"></script>
 <script type="module" src="/src/resources/scripts/productslide.js"></script>
