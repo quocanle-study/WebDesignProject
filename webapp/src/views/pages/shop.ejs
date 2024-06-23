@@ -6,6 +6,8 @@
     <!-- Sidebar -->
     <section
             class="grid flex-col phone:max-tablet:justify-center tablet:flex  phone:max-tablet:border-gray-200 phone:max-tablet:border-b-2 phone:max-tablet:p-4 gap-5 phone:max-tablet:mb-5 phone:max-tablet:w-screen">
+        
+            <!-- Search Bar -->
         <form class="max-w-[1200px] w-[220px] ">   
             <label for="default-search" class="text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div class="relative phone:max-tablet:start-[40%]">
@@ -15,6 +17,12 @@
                 </button>
             </div>
         </form>
+        <div
+            id="searchResults" 
+            class="search-results">
+        </div>
+
+        <!-- Filter-->
         <section class="select-none phone:max-tablet:grid phone:max-tablet:justify-center">
             <div class="phone:max-tablet:flex gap-3 relative" id="dropdownButton" >
                 <div
@@ -80,11 +88,11 @@
     </section>
 
     <!-- Products -->
-     <section class="phone:max-tablet:grid phone:max-tablet:justify-center">
+    <section class="phone:max-tablet:grid phone:max-tablet:justify-center">
     <section
-            class=" grid phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-2 tablet:col-span-2 laptop:col-span-3 laptop:grid-cols-3 tablet:w-[calc(1200px-650px)] laptop:w-[calc(1200px-370px)] phone:mx-[10px] phone:w-[calc(500px-120px)]">
+            class="grid h-full phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-2 laptop:grid-cols-3 tablet:w-[calc(1200px-650px)] laptop:w-[calc(1200px-370px)] phone:mx-[10px] phone:w-[calc(500px-120px)]">
         <% products.forEach(function(item) { %>
-            <div class="mb-20 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+            <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
                 <a href="/product?id=<%= item.id %>">
                     <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
                         <img src="<%= item.images[0] %>" alt="<%= item.name %>" class="rounded w-full h-full object-cover">
