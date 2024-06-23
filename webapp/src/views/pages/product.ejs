@@ -380,7 +380,7 @@
             <% products.forEach(function(item) { %>
                 <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
                     <a href="/product?id=<%= item.id %>">
-                        <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
                             <img src="<%= item.images[0] %>" alt="<%= item.name %>" class="rounded w-full h-full object-cover">
                         </div>
                         <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3"><%= item.name %></h3>
