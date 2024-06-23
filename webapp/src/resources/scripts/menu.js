@@ -1,9 +1,6 @@
-
-
 const menuOpenBtn = document.querySelector('.menu-open-btn');
 const menuCloseBtn = document.querySelector('.menu-close-btn');
 const offCanvasMenu = document.querySelector('.offcanvas-menu');
-
 
 function toggleMenu() {
     offCanvasMenu.classList.toggle('translate-x-full');
