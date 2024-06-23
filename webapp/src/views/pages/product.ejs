@@ -58,7 +58,7 @@
         >&#10095;</a
         >
     </div>
-    <div class="flex gap-6 min-laptop:hidden min-[431px]:hidden phone:mb-5">
+    <div class="flex gap-6 min-laptop:hidden min-[431px]:hidden phone:mb-10 mt-5">
         <img 
             src="<%= product.images[0] %>" 
             alt="Image 1" 
@@ -168,7 +168,7 @@
                             data-option="option1"
                             data-option-index="0"
                     >
-                        <div class="header"><span>Material</span></div>
+                        <div class="header mt-3"><span>Material</span></div>
                         <div class="select-swap">
                             <div
                                     data-value="Bạc"
@@ -251,7 +251,7 @@
                                 />
                                 <label
                                         for="swatch-2-dayda-xanh-do"
-                                        class="sd block mx-2.5 my-2.5 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300"
+                                        class="sd block mx-2.5 mt-2.5 mb-4 bg-white relative text-sm font-normal text-center cursor-pointer tracking-wide p-2.5 border border-gray-300"
                                 ><span><%= product.stylecode %></span></label
                                 >
                             </div>
@@ -260,7 +260,7 @@
                 </div>
             </form>
         </div>
-        <div class="new-product-action mt-6">
+        <div class="new-product-action mt-6 ">
             <button
                     id="addcart"
                     class="w-full bg-gray-800 text-white flex justify-center items-center h-11"
@@ -268,36 +268,10 @@
                 Add to cart
             </button>
         </div>
-        <div class="new-product-wishlist mt-4">
-          <span class="wishlist-btn" data-pid="1051064861">
-            <button
-                    data-pid="1051064861"
-                    data-handle="vong-bac-pandora-boc-da-mau-xanh"
-                    data-price="2090000"
-                    data-title="Vòng Bạc Pandora Bọc Da Màu Xanh"
-                    id="onAppWishList_btn_remove"
-                    class=" w-full h-11 bg-transparent text-2xl text-gray-800 flex justify-center items-center"
-            >
-              <i class="fa fa-heart"></i>
-              <span class="hidden text-sm ml-2.5">Xoá khỏi yêu thích</span>
-            </button>
-            <button
-                    data-pid="1051064861"
-                    data-handle="vong-bac-pandora-boc-da-mau-xanh"
-                    data-price="2090000"
-                    data-title="Vòng Bạc Pandora Bọc Da Màu Xanh"
-                    id="onAppWishList_btn_add"
-                    class="w-full h-11 bg-transparent text-2xl text-gray-800 flex justify-center items-center"
-            >
-              <i class="fa fa-heart-o"></i>
-              <span class="hidden text-sm ml-2.5">Thêm vào yêu thích</span>
-            </button>
-          </span>
-        </div>
     </div>
 </div>
 
-<div class="flex ml-[200px] gap-6 min-laptop:hidden max-[431px]:ml-10 max-[431px]:hidden mb-10">
+<div class="flex ml-[200px] gap-6 min-laptop:hidden max-[431px]:ml-10 max-[431px]:hidden mb-10 mt-5 max-w-[1200px]">
     <img 
         src="<%= product.images[0] %>" 
         alt="Image 1" 
@@ -320,9 +294,9 @@
         class="w-[100px] h-[100px] object-cover opacity-50 hover:opacity-100 hover:border hover:border-gray-700 max-laptop:hidden">    
 </div>
 
-<div class="new-container sm:mt-10 max-sm:mx-10 mx-[200px] max-w-[1200px] max-[431px]:mx-0">
-    <div class="new-product-contents mt-10">
-        <div class="max-[431px]:ml-4 new-product-content border-b border-gray-300 my-10">
+<div class="new-container max-sm:mx-10 mx-[200px] max-w-[1200px] max-[431px]:mx-0">
+    <div class="new-product-contents">
+        <div class="max-[431px]:ml-4 new-product-content border-b border-gray-300 tablet:my-10">
             <h3
                     class="font-roboto cursor-pointer font-bold text-2xl flex flex-wrap items-center justify-between pb-3.75"
             >
@@ -366,7 +340,7 @@
     <!-- Product Grid -->   
     <section class="grid justify-center">
         <section
-                class="grid phone:grid-cols-2 tablet:grid-cols-3  laptop:grid-cols-4 tablet:mx-[200px] tablet:w-[calc(1000px-200px)] laptop:w-[calc(1200px-100px)] phone:w-[calc(500px-120px)] max-w-[1200px]">
+                class="grid phone:grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 mx-auto max-w-[1200px] gap-4 px-4">
             <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
                 <a href="/product">
                     <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]  bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
@@ -448,6 +422,7 @@
             </a>
         </div>
     </section>
+</section>
 </section>
 
 <script type="module" src="/src/resources/scripts/menu.js"></script>
