@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filterProducts = () => {
         const filter = searchInput.value.toLowerCase();
-        productItems.forEach(item => {
+        productItems.forEach((item) => {
             const productName = item.querySelector('.product-name').innerText.toLowerCase();
             if (productName.includes(filter)) {
                 item.style.display = '';
@@ -22,4 +22,3 @@ document.addEventListener('DOMContentLoaded', () => {
         filterProducts();
     });
 });
-    
