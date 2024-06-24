@@ -8,6 +8,7 @@ function plusSlides(n) {
 }
 
 // Thumbnail image controls
+// eslint-disable-next-line
 function currentSlide(n) {
     showSlides((slideIndex = n));
 }

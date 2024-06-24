@@ -17,10 +17,9 @@ export default {
             },
             width: {
                 'calc-1/2': 'calc(50% - 1rem)',
-              },
+            },
         },
-    
     },
     plugins: [],
-    mode: "jit", 
+    mode: 'jit',
 };

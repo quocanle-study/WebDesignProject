@@ -54,6 +54,7 @@ const getProductById = async (req, res) => {
         product = await prisma.product.findUnique({
             where: { id: parseInt(id) },
         });
+        // eslint-disable-next-line
     } catch (error) {
         // Render 500 error page
         return res.status(500).render('error', { error: 'Internal Server Error' });
@@ -89,19 +90,19 @@ const getShuffleRanProductsAndProductById = async (req, res) => {
     try {
         // Fetch products from the database along with their categories and images
         const allProductIds = await prisma.product.findMany({
-            select: { id: true }
+            select: { id: true },
         });
 
         // Step 2: Shuffle the array of IDs
         const shuffledIds = allProductIds.sort(() => 0.5 - Math.random());
 
         // Step 3: Select the first 10 IDs
-        const selectedIds = shuffledIds.slice(0, 10).map(product => product.id);
+        const selectedIds = shuffledIds.slice(0, 10).map((product) => product.id);
 
         // Step 4: Fetch the details of these 10 products
         const products = await prisma.product.findMany({
             where: {
-                id: { in: selectedIds }
+                id: { in: selectedIds },
             },
             include: {
                 productCategory: true,
@@ -137,6 +138,7 @@ const getShuffleRanProductsAndProductById = async (req, res) => {
             product = await prisma.product.findUnique({
                 where: { id: parseInt(id) },
             });
+            // eslint-disable-next-line
         } catch (error) {
             // Render 500 error page
             return res.status(500).render('error', { error: 'Internal Server Error' });
@@ -165,7 +167,7 @@ const getShuffleRanProductsAndProductById = async (req, res) => {
             return res.json(productsWithImages, productWithImages);
         }
 
-        return res.render('pages/product', { products: productsWithImages, product: productWithImages});
+        return res.render('pages/product', { products: productsWithImages, product: productWithImages });
     } catch (error) {
         console.error(error);
         return res.status(500).render('error', { error: 'Internal Server Error' });

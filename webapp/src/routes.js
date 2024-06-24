@@ -1,6 +1,8 @@
 import express from 'express';
+// eslint-disable-next-line
 import { getHomepage, getHomepageShuffle10 } from './controllers/homepage-controller.js';
 import { getAboutPage } from './controllers/about-controller.js';
+// eslint-disable-next-line
 import { getProducts, getProductById, getShuffleRanProductsAndProductById } from './controllers/product-controller.js';
 import { getContactForm, createContact, contactSuccess } from './controllers/contact-controller.js';
 import { contactValidator } from './validators/index.js';

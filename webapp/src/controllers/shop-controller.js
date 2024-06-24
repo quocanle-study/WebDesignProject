@@ -37,11 +37,11 @@ const getShop = async (req, res) => {
         },
     });
 
-    const productsWithImages = products.map(product => {
-        const images = product.images.map(image => image.url); // Map each image to its URL
+    const productsWithImages = products.map((product) => {
+        const images = product.images.map((image) => image.url); // Map each image to its URL
         return {
             ...product,
-            images: images // Replace the images relation with just the URLs
+            images: images, // Replace the images relation with just the URLs
         };
     });
 
