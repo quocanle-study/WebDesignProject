@@ -96,9 +96,9 @@
         >
             <b
                     class="bg-pink-200 text-gray-800 inline-block px-2.5 py-1 font-bold mx-1.5"
-            >£<%= product.price - product.sales %></b
+            >$<%= product.price - product.sales %></b
             >
-            <del class="mx-1.5">£<%= product.price %></del>
+            <del class="mx-1.5">$<%= product.price %></del>
             <% let salePercentage = ((product.price - (product.price - product.sales)) / product.price) * 100; %>
             <span
                     class="bg-gray-800 text-white inline-block px-2.5 py-1 font-medium mx-1.5"
