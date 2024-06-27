@@ -1,268 +1,409 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="LBJ Jewlery Luxury">
-    <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="LBJ Jewlery Luxury"/>
+    <title>LBJ</title>
+    <meta name="csrf-token" content="9aG0aJPw-olRleWrFQZeBxGiKdhsY9V66yVk">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>LBJ - Shop</title>
-</head>
-<style>
-  .col {
-    width: 92.5%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
-<body>
-  <!-- Navigation Bar -->
-  <header class="flex flex-row col justify-between border-b-2 bg-white my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 " >
-    <div class="flex flex-row mt-1 ml-2 tablet:hidden ">
-      <a href="#">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="size-7" />
-      </a>
-    </div>
-    <a href="index.html">
-      <div class="text-4xl leading-10 text-stone-950 phone:max-tablet:ml-0 phone:max-tablet:mb-5">
-        <font color="#a28b68">L</font><span class="text-neutral-950">B</span
-        ><span class="tetx-stone-950">J</span>
-      </div>
-    </a>
-    <div class="relative tablet:hidden">
-      <div class="menu-open-btn phone:max-tablet:mb-5 ">
-        <a href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>                
-        </a>
-      </div>
-      <nav class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-20 translate-x-full">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
         
-        <a href="#" class="menu-close-btn absolute top-6 left-6">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-          </svg>  
-        </a>
-          <ul class="flex flex-col mt-16">
-                      
-            <il class="my-5"><a href="shop.html" class="text-xl font-semibold hover:text-red-500 duration-300" >Shop</a></il>
-            <il class="my-5"><a href="about.html" class="text-xl font-semibold hover:text-red-500 duration-300" >About Us</a></il>
-            <il class="my-5"><a href="#" class="text-xl font-semibold hover:text-red-500 duration-300" >Cart</a></il>
-          </ul>
-        
-      </nav>
-    </div>
+        #fontgucci {
+            font-family: "Playfair Display", serif;
+        }
+
+        .col {
+            width: 92.5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
     
-    <div class="flex flex-row phone:max-tablet:hidden">
-      
-      <ul class="flex flex-row gap-8">
-        <li class="border-b-2 border-black p-4"><a href="shop.html">Shop</a></li>
-        <li class="p-4 "><a href="about.html">About Us</a></li>
-      </ul>
-      <div class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"></div>
-      <div class="flex flex-row p-4 gap-10 ">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]" />
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start aspect-square w-[21px]" />
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white" />
-      </div>
-    </div>
-  </header>
-  <!-- Navigation Bar -->
+</head>
+<body>
 
-  <div class=" grid phone:max-tablet:text-center phone:mb-3 mb-5 tablet:ml-14 desktop:ml-24">
-    <h1 class="text-3xl font-medium leading-10 text-black">Shop The Latest</h1>
-  </div>
-  <main class="grid tablet:grid-cols-3 laptop:grid-cols-4 phone:w-full" >
-    <!-- Sidebar -->
-    <section class="grid flex-col phone:max-tablet:justify-center tablet:flex tablet:w-[300px] tablet:ml-10 desktop:ml-20 phone:max-tablet:border-gray-200 phone:max-tablet:border-b-2  phone:p-4 phone:mb-5">
-      <div class="flex flex-row phone:max-tablet:justify-center">
-        <input class="border-b-2 border-gray-100" type="text" placeholder="Search" />
-        <a href="">
-          <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e049bbac9007f28b8521ba6a8adffac68548815191ee5882c549324c1ea8d37d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-          alt="Search Icon"
-          class="shrink-0 border border-white border-solid aspect-[0.95] fill-black stroke-[0.75px] stroke-white w-[19px] ml-5"/>
+<!-- Navigation Bar -->
+<section class="grid tablet:justify-center">
+    <header
+        class="flex flex-row justify-between border-b-2 bg-white my-5 mb-10 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 tablet:mx-[200px] tablet:max-w-[1200px] phone:mx-[10px] tablet:w-[calc(1200px-350px)] laptop:w-[calc(1200px-100px)] shadow-sm"
+    >
+        <div class="flex flex-row mt-1 ml-2 tablet:hidden">
+            <a href="#">
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="size-7"
+                />
+            </a>
+        </div>
+        <a href="/">
+            <div class="text-4xl leading-10 text-stone-950 phone:max-tablet:ml-0 phone:max-tablet:mb-5">
+                <font color="#a28b68">L</font><span class="text-neutral-950">B</span
+                ><span class="tetx-stone-950">J</span>
+            </div>
         </a>
-      </div>
-      <section class="select-none">
-        <div class="phone:max-tablet:flex gap-3 " id= "dropdownButto</div>n">
-            <div 
-              onclick="toggleDropdownShop()"
-              class="border-solid border-gray-350 border-[1px] px-5 py-2 mt-10 rounded cursor-pointer text-sm flex justify-between w-[200px] "  >
-              Shop By
-              <img width="10" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e94ec9341bd16f6adc455126d5a4c0f9b93274f8dd2680479859e3afea8c2f6a?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" class="fill-black" />
-      
+        <div class="menu-item relative tablet:hidden" style="opacity: 0; visibility: hidden;">
+            <div class="menu-open-btn phone:max-tablet:mb-5 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
             </div>
-            <div 
-              onclick="toggleDropdownShop()"
-              class="border-solid border-gray-350 border-[1px] px-5 py-2 mt-10 rounded cursor-pointer text-sm flex justify-between w-[200px]"  >
-              Sort By
-              <img width="10" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e94ec9341bd16f6adc455126d5a4c0f9b93274f8dd2680479859e3afea8c2f6a?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" class="fill-black" />
-      
-            </div>
-            <div 
-              id="dropdownContentShop"
-              class = "rounded border-[1px] border-gray-300 bg-white absolute top-[50px] w-[200px] shadow-md hidden">
-             <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
-             <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
-             <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
-             <div class="cursor-pointer hover:bg-gray-300 p-4">Hello</div>
-          </div>
+            <nav
+                class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-30 translate-x-full"
+            >
+                <div class="menu-close-btn absolute top-6 left-6">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <ul class="flex flex-col mt-16">
+                    <li class="my-5">
+                        <a href="/" class="text-xl font-semibold hover:text-red-500 duration-300">Home</a>
+                    </li>
+                    <li class="my-5">
+                        <a href="/shop" class="text-xl font-semibold hover:text-red-500 duration-300">Shop</a>
+                    </li>
+                    <li class="my-5">
+                        <a href="/about" class="text-xl font-semibold hover:text-red-500 duration-300">About Us</a>
+                    </li>
+                    <li class="my-5">
+                        <a href="#" class="text-xl font-semibold hover:text-red-500 duration-300">Cart</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
+        <div class="flex flex-row phone:max-tablet:hidden">
+            <ul class="flex flex-row gap-8">
+                <li class="p-4"><a href="/shop">Shop</a></li>
+                <li class="p-4"><a href="/about">About Us</a></li>
+            </ul>
+            <div
+                class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"
+            ></div>
+            <div class="flex flex-row p-4 gap-10">
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]"
+                />
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="shrink-0 self-start aspect-square w-[21px]"
+                />
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white"
+                />
+            </div>
+        </div>
+    </div>
+</header>
+</section>
+<!-- Navigation Bar -->
+
+
+<section class="grid justify-center w-screen">
+  <div class="grid phone:max-tablet:text-center tablet:mx-[200px] max-w-[1200px] phone:max-tablet:max-w-screen phone:max-tablet:ml-5">
+    <h1 class="phone:text-[35px] tablet:text-4xl font-roboto text-black phone:mb-5 tablet:mb-10 ">Shop The Latest</h1>
+  </div>
+  <main class="grid tablet:grid-cols-3 laptop:grid-cols-4 tablet:mx-[200px] max-w-[1200px] laptop:w-[calc(1200px-100px)] tablet:max-laptop:w-[calc(1200px-350px)] phone:max-tablet:mb-5 phone:max-tablet:w-screen">
+    <!-- Sidebar -->
+    <section class="grid flex-col phone:max-tablet:justify-center tablet:flex phone:max-tablet:border-gray-200 phone:max-tablet:border-b-2 phone:max-tablet:p-4 gap-5 phone:max-tablet:mb-5 phone:max-tablet:w-screen">
+
+      <!-- Search Bar -->
+      <form id="search-form" method="GET" action="/shop" class="max-w-[1200px] w-[220px] ">
+        <label for="default-search" class="text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <div class="relative phone:max-tablet:start-[40%]">
+          <input type="text" placeholder="Search" name="search" value="" id="default-search" class="block w-full p-4 ps-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-white dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
+          <button type="submit" class="absolute end-2.5 bottom-2.5  bg-white focus:ring-2 focus:outline-none rounded-lg  py-2">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e049bbac9007f28b8521ba6a8adffac68548815191ee5882c549324c1ea8d37d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Search icon">
+          </button>
+        </div>
+      </form>
+      <div id="searchResults" class="search-results mt-4">
+      </div>
+
+      <!-- Filter -->
+      <section class="select-none phone:max-tablet:grid phone:max-tablet:justify-center">
+        <div class="phone:max-tablet:flex gap-3 relative" id="dropdownButton">
+          <div id="shopBy" class="border-solid border-gray-350 border-[1px] px-5 py-2 phone:max-tablet:mt-10 rounded cursor-pointer text-sm flex justify-between w-[220px] phone:max-tablet:w-[full] phone:max-tablet:max-w-[180px]">
+            Shop By
+            <img width="10" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e94ec9341bd16f6adc455126d5a4c0f9b93274f8dd2680479859e3afea8c2f6a?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" class="fill-black" />
+          </div>
+          <div id="dropdownShop" class="rounded border-[1px] border-gray-300 bg-white absolute top-[50px] phone:max-tablet:top-[80px] phone:max-tablet:w-[full] phone:max-tablet:max-w-[180px] w-[220px] shadow-md hidden z-20">
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">Bronze</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">Silver</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">Gold</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">Diamond</div>
+          </div>
+          <div id="sortBy" class="border-solid border-gray-350 border-[1px] px-5 py-2 mt-10 rounded cursor-pointer text-sm flex justify-between w-[220px] phone:max-tablet:w-[full] phone:max-tablet:max-w-[180px]">
+            Sort By
+            <img width="10" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e94ec9341bd16f6adc455126d5a4c0f9b93274f8dd2680479859e3afea8c2f6a?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" class="fill-black" />
+          </div>
+          <div id="dropdownSort" class="rounded border-[1px] border-gray-300 bg-white absolute top-[130px] phone:max-tablet:top-[80px] phone:max-tablet:w-[full] phone:max-tablet:max-w-[180px] phone:max-tablet:start-[190px] w-[220px] shadow-md hidden z-10">
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">Lowest</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">Highest</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">Best Seller</div>
+            <div class="cursor-pointer hover:bg-gray-300 p-4 text-[14px]">New Arrival</div>
+          </div>
         </div>
       </section>
-      <div class="flex justify-between border-t-4 border-black py-4 mt-10 text-sm text-gray-500 phone:max-tablet:hidden w-[200px]">
-        <span>Price: $40-$180</span>
-        <a href="">
-          <font color="#a28b68">Filter</font>
-        </a>
-        
-      </div>
-      <div class="flex justify-between my-10 phone:max-tablet:hidden w-[200px] ">
-        <a>On sale</a>
-        <button>
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9396a6742dce943bd5ef7c4b474322b8dc1bbfb56b4b8b0e7d091f0acfc1af50?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-            alt="On Off Button"
-            class=""/>
-        </button>
-      </div>
-      <div class="flex justify-between phone:max-tablet:hidden w-[200px]">
-        <a>In stock</a>
-        <button>
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/9396a6742dce943bd5ef7c4b474322b8dc1bbfb56b4b8b0e7d091f0acfc1af50?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
-            alt="On Off Button"
-            class=""/>
-        </button>
-      </div>
+
+      <!-- On Sale and In stock-->
+      <section class="phone:max-tablet:flex phone:max-tablet:justify-center phone:max-tablet:gap-10">
+        <div class="flex justify-between phone:max-tablet:my-4 my-10 phone:max-tablet:w-[full] phone:max-tablet:max-w-[150px] w-[220px] z-0">
+          <a>On sale</a>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer">
+            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
+          </label>
+        </div>
+        <div class="flex justify-between phone:max-tablet:w-[full] phone:max-tablet:max-w-[150px] w-[220px] z-0 items-center">
+          <a>In stock</a>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" class="sr-only peer">
+            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-green-600"></div>
+          </label>
+        </div>
+      </section>
     </section>
 
     <!-- Products -->
-    <section class=" grid gap-3 phone:grid-cols-2  phone:max-tablet:justify-center tablet:grid-cols-2 tablet:col-span-2  laptop:col-span-3 laptop:grid-cols-3">
-      <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px]  ">
-        <a href="product.html">
-          <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px]  bg-[url('https://product.hstatic.net/200000103143/product/e_1__8f9ebb926bff444ab6ac44931112f71a_f942d9209a97492b83a08468eea6a3f2_bcb2b6b8a6f849ac8dfbd41382abeeab_master.jpg')] bg-cover bg-center">
-            <section class="p-4 text-white">
-              <span class="bg-stone-500 rounded-sm">Sold out</span>
-            </section>
-          </div>
-          <h3 class="text-bold text-[15px] text-center mt-3 desktop:text-2xl">Product</h3>
-          <h4 class="text-center text-[12px] desktop:text-[15px]">
-            <font color="#a28b68">$20,000</font>
-          </h4>
-        </a>
-      </div>
-      <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] ">
-        <a href="product.html">
-          <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px]  bg-[url('https://product.hstatic.net/200000103143/product/load_05a184bb5c3e406099a67ee309d29068_fd8bf5829a834d82b660f3d82eaf63f6_e9089a6b027740f09f9df4e448c391fa_master.jpg')] bg-cover bg-center">
-          </div>
-          <h3 class="text-bold text-[15px] text-center mt-3 desktop:text-2xl">Product</h3>
-          <h4 class="text-center text-[12px] desktop:text-[15px]">
-            <font color="#a28b68">$20,000</font>
-          </h4>
-        </a>
-      </div>
-      <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] ">
-        <a href="product">
-          <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
-          </div>
-          <h3 class="text-bold text-[15px] text-center mt-3 desktop:text-2xl">Product</h3>
-          <h4 class="text-center text-[12px] desktop:text-[15px]">
-            <font color="#a28b68">$20,000</font>
-          </h4>
-        </a>
-      </div>
-      <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] ">
-        <a href="product.html">
-          <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] bg-[url('https://product.hstatic.net/200000103143/product/load_b195653da08444b495b95ce88c01233b_10076d3b0b5448fc9e1cb0687e4bebee_4a696b61237340349581e7addbc965f2_master.jpg')] bg-cover bg-center">
-          </div>
-          <h3 class="text-bold text-[15px] text-center mt-3 desktop:text-2xl">Product</h3>
-          <h4 class="text-center text-[12px] desktop:text-[15px]">
-            <font color="#a28b68">$20,000</font>
-          </h4>
-        </a>
-      </div>
-      <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] ">
-        <a href="product.html">
-          <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] bg-[url('https://product.hstatic.net/200000103143/product/load_56c06dbf4ddb45ac9aae867e96dad1c7_ca532e91f28a452a820dac8ffdadea5f_49c88b24519f4dd1a65ff8f4afefd724_master.jpg')] bg-cover bg-center">
-          </div>
-          <h3 class="text-bold text-[15px] text-center mt-3 desktop:text-2xl">Product</h3>
-          <h4 class="text-center text-[12px] desktop:text-[15px]">
-            <font color="#a28b68">$20,000</font>
-          </h4>
-        </a>
-      </div>
-      <div class="mb-20 phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] ">
-        <a href="product.html">
-          <div class="bg-red rounded phone:h-[200px] phone:w-[200px] tablet:w-[300px] tablet:h-[300px] desktop:h-[400px] desktop:w-[400px] bg-[url('https://product.hstatic.net/200000103143/product/b_1__94bdf50b37244b48a1d2bce9e6708d8e_c91c831868ae4c338ae2c3062921d283_5133c2b7f9a24e09a9711d5f01b878db_master.jpg')] bg-cover bg-center">
-          </div>
-          <h3 class="text-bold text-[15px] text-center mt-3 desktop:text-2xl">Product</h3>
-          <h4 class="text-center text-[12px] desktop:text-[15px]">
-            <font color="#a28b68">$20,000</font>
-          </h4>
-        </a>
-      </div>
+    <section class="phone:max-tablet:grid phone:max-tablet:justify-center">
+      <section class="grid h-full phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-2 laptop:grid-cols-3 tablet:w-[calc(1200px-650px)] laptop:w-[calc(1200px-370px)] phone:mx-[10px] phone:w-[calc(500px-120px)]">
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=1">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/199/sp-gvpaxmw000044-vong-tay-vang-trang-14k-dinh-ngoc-trai-akoya-pnj-1.png" alt="14K White Gold Bracelet with Akoya Pearl PNJ PAXMW000044" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">14K White Gold Bracelet with Akoya Pearl PNJ PAXMW000044</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$15</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=2">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/153/gvctxmy000059-vong-tay-vang-18k-dinh-da-citrine-pnj-sac-xuan-1.png" alt="18K Gold Bracelet with Citrine PNJ Spring CTXMY000059" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Gold Bracelet with Citrine PNJ Spring CTXMY000059</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$30</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=3">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/69/gvrbxmy000180-vong-tay-vang-18k-dinh-da-ruby-pnj-sac-xuan-01.png" alt="18K Gold Bracelet with Ruby PNJ Spring RBXMY000180" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Gold Bracelet with Ruby PNJ Spring RBXMY000180</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$45</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=4">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/140/gvxmxmw000167-vong-tay-vang-trang-y-18k-dinh-da-cz-pnj-1.png" alt="18K Italian White Gold Bracelet with CZ PNJ XMXMW000167" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Italian White Gold Bracelet with CZ PNJ XMXMW000167</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$20</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=5">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/133/gv0000w000024-vong-tay-vang-trang-y-18k-pnj-1.png" alt="18K Italian White Gold Bracelet PNJ 0000W000024" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Italian White Gold Bracelet PNJ 0000W000024</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$20</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=6">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/205/sp-gvxm00y000034-vong-tay-vang-18k-dinh-da-cz-pnj-1.png" alt="18K Gold Bracelet with CZ PNJ XM00Y000034" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Gold Bracelet with CZ PNJ XM00Y000034</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$20</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=7">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/135/gvxmxmw000062-vong-tay-vang-trang-10k-dinh-da-ecz-pnj-1.png" alt="10K White Gold Bracelet with ECZ PNJ Pure Flower XMXMW000062" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">10K White Gold Bracelet with ECZ PNJ Pure Flower XMXMW000062</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$25</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=8">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/211/sp-gnxmxmw005164-nhan-vang-trang-14k-dinh-da-ecz-pnj-1.png" alt="14K White Gold Ring with ECZ PNJ XMXMW005164" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">14K White Gold Ring with ECZ PNJ XMXMW005164</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$20</font>
+            </h4>
+          </a>
+        </div>
+        
+        <div class="mb-28 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md ">
+          <a href="/product?id=9">
+            <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+              <img src="https://cdn.pnj.io/images/detailed/211/sp-gnxmxmw005163-nhan-vang-14k-dinh-da-ecz-pnj-1.png" alt="14K White Gold Ring with ECZ PNJ XMXMW005163" class="rounded w-full h-full object-cover">
+            </div>
+            <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">14K White Gold Ring with ECZ PNJ XMXMW005163</h3>
+            <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+              <font color="#a28b68">$30</font>
+            </h4>
+          </a>
+        </div>
+        
+      </section>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="grid col border-t-2 mt-60 phone:max-tablet:justify-center">
+    
+    <!-- Pagination -->
+  <!-- Pagination buttons -->
+<div class="flex font-roboto justify-center mt-6 space-x-1 pagination">
+    
+        <span class="bg-gray-300 p-3 rounded-xl prev-page w-8">&lt;</span>
+    
+
+    
+        
+            <a href="#" class="bg-gray-500 text-white p-3 rounded-xl w-8">1</a>
+        
+    
+        
+            <a href="#" class="bg-gray-200 p-3 rounded-xl hover:bg-gray-300 w-8">2</a>
+        
+    
+
+    
+        <a href="#" class="bg-gray-200 p-3 rounded-xl hover:bg-gray-300 next-page w-8">&gt;</a>
+    
+</div>
+
+</section>
+
+
+
+
+<!-- Footer -->
+<section class="grid justify-items-center ">
+<footer class=" border-t-2 mt-60 phone:max-tablet:justify-center tablet:mx-[200px] max-w-[1200px]">
     <section class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex">
-      <div class="flex gap-5 mt-10 phone:flex-col">
-        <div>
-          <a href="" class="text-gray-500 mr-10">CONTACT</a>
-          <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
-          <a href="" class="text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
+        <div class="flex gap-5 mt-10 phone:flex-col">
+            <div>
+                <a href="" class="text-gray-500 mr-10">CONTACT</a>
+                <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
+                <a href="" class="text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
+            </div>
         </div>
-    </div>
         <div class="border-b-2 border-black">
-          <div class="flex justify-between gap-20 mt-7 mb-2">
-            <input class="text-black" type="email" placeholder="Give an email, get the newsletter."></input>
-            <img 
-            class="cursor-pointer" 
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" />
-          </div>
+            <div class="flex justify-between gap-20 mt-7 mb-2">
+                <input class="text-black" type="text" placeholder="Give an email, get the newsletter.">
+                <img
+                        class="cursor-pointer"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                        alt=""/>
+            </div>
         </div>
     </section>
     <section class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10 ">
-      <div>
-        © 2024 LBJ.
-        <a href="#" class="text-gray-500">Terms of use</a>
-        and
-        <a href="#" class="text-gray-500">Privacy Policy</a>
-      </div>
-      <div class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0 phone:max-tablet:justify-center">
-        <a href="#">
-          <img class="size-[15px]" src="/asset/linkedin-big-logo.png" alt="In Icon">
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100006106118260" target="_blank">
-          <img class="size-[15px]" src="/asset/facebook (1).png" alt="Facebook Icon">
-        </a>
-        <a href="#">
-          <img class="size-[15px]" src="/asset/instagram.png" alt="Instagram Icon">
-        </a>
-        <a href="#">
-          <img class="size-[15px]" src="/asset/twitter.png" alt="Twitter Icon">
-        </a>
+        <div>
+            © 2024 LBJ.
+            <a href="#" class="text-gray-500">Terms of use</a>
+            and
+            <a href="#" class="text-gray-500">Privacy Policy</a>
+        </div>
+        <div class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0 phone:max-tablet:justify-center">
+            <a href="#">
+                <img class="size-[15px]" src="/asset/linkedin-big-logo.png" alt="In Icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100006106118260" target="_blank">
+                <img class="size-[15px]" src="/asset/facebook (1).png" alt="Facebook Icon">
+            </a>
+            <a href="#">
+                <img class="size-[15px]" src="/asset/instagram.png" alt="Instagram Icon">
+            </a>
+            <a href="#">
+                <img class="size-[15px]" src="/asset/twitter.png" alt="Twitter Icon">
+            </a>
+        </div>
     </section>
-  </footer> 
-  <!-- Footer -->
+</footer>
+</section>
+<!-- Footer -->
 
-    <script type="module" src="/src/scripts/main.js"></script>
-    <script type="module" src="/src/scripts/menu.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7QBN2WL4D"></script>
-    <script type="module" src="/src/scripts/gganalytics.js"></script>
-    <script>
-      function toggleDropdownShop(){
-        let dropdownContentShop = document.querySelector("#dropdownButton #dropdownContentShop");
-        dropdownContentShop.classList.toggle("hidden");
-      }
-    </script> 
+
+<script type="module" src="./src/scripts/main.js"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7QBN2WL4D"></script>
+<script>
+    // OLD code is: src/scripts/gganalytics.js
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-J7QBN2WL4D');
+</script>
+
+<!-- Additional scripts customized for specific screens -->
+<script type="module" src="./src/scripts/newFromApp/menu.js"></script>
+<script type="module" src="./src/scripts/newFromApp/dropdown.js"></script>
 </body>
 </html>

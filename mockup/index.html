@@ -1,321 +1,389 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="LBJ Jewlery Luxury" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="LBJ Jewlery Luxury"/>
     <title>LBJ</title>
-  </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    body {
-      font-family: "DM Sans", sans-serif;
-    }
+    <meta name="csrf-token" content="35V22jvR-QGyVXnnp5H4zz66xQaslul0V5Bo">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-    #fontgucci {
-      font-family: "Playfair Display", serif;
-    }
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
+        
+        #fontgucci {
+            font-family: "Playfair Display", serif;
+        }
 
-    .col {
-      width: 92.5%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
-
-  <body>
- <!-- Navigation Bar -->
- <header class="flex flex-row col justify-between border-b-2 bg-white my-5 mb-20 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 " >
-  <div class="flex flex-row mt-1 ml-2 tablet:hidden ">
-    <a href="#">
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="size-7" />
-    </a>
-  </div>
-  <a href="index.html">
-    <div class="text-4xl leading-10 text-stone-950 phone:max-tablet:ml-0 phone:max-tablet:mb-5">
-      <font color="#a28b68">L</font><span class="text-neutral-950">B</span
-      ><span class="tetx-stone-950">J</span>
-    </div>
-  </a>
-  <div class="relative tablet:hidden">
-    <div class="menu-open-btn phone:max-tablet:mb-5 ">
-      <a href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>                
-      </a>
-    </div>
-    <nav class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-20 translate-x-full">
-      
-      <a href="#" class="menu-close-btn absolute top-6 left-6">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-        </svg>  
-      </a>
-        <ul class="flex flex-col mt-16">
-                    
-          <il class="my-5"><a href="shop.html" class="text-xl font-semibold hover:text-red-500 duration-300" >Shop</a></il>
-          <il class="my-5"><a href="about.html" class="text-xl font-semibold hover:text-red-500 duration-300" >About Us</a></il>
-          <il class="my-5"><a href="#" class="text-xl font-semibold hover:text-red-500 duration-300" >Cart</a></il>
-        </ul>
-      
-    </nav>
-  </div>
-  
-  <div class="flex flex-row phone:max-tablet:hidden">
+        .col {
+            width: 92.5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
     
-    <ul class="flex flex-row gap-8">
-      <li class="p-4"><a href="shop.html">Shop</a></li>
-      <li class="p-4 "><a href="about.html">About Us</a></li>
-    </ul>
-    <div class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"></div>
-    <div class="flex flex-row p-4 gap-10 ">
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]" />
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start aspect-square w-[21px]" />
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="Image description" class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white" />
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<section class="grid tablet:justify-center">
+    <header
+        class="flex flex-row justify-between border-b-2 bg-white my-5 mb-10 phone:max-tablet:mb-10 phone:max-tablet:border-b-0 tablet:mx-[200px] tablet:max-w-[1200px] phone:mx-[10px] tablet:w-[calc(1200px-350px)] laptop:w-[calc(1200px-100px)] shadow-sm"
+    >
+        <div class="flex flex-row mt-1 ml-2 tablet:hidden">
+            <a href="#">
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="size-7"
+                />
+            </a>
+        </div>
+        <a href="/">
+            <div class="text-4xl leading-10 text-stone-950 phone:max-tablet:ml-0 phone:max-tablet:mb-5">
+                <font color="#a28b68">L</font><span class="text-neutral-950">B</span
+                ><span class="tetx-stone-950">J</span>
+            </div>
+        </a>
+        <div class="menu-item relative tablet:hidden" style="opacity: 0; visibility: hidden;">
+            <div class="menu-open-btn phone:max-tablet:mb-5 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+            </div>
+            <nav
+                class="offcanvas-menu fixed bg-gray-200 h-full top-0 right-0 w-2/3 flex px-6 duration-200 z-30 translate-x-full"
+            >
+                <div class="menu-close-btn absolute top-6 left-6">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                    >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <ul class="flex flex-col mt-16">
+                    <li class="my-5">
+                        <a href="/" class="text-xl font-semibold hover:text-red-500 duration-300">Home</a>
+                    </li>
+                    <li class="my-5">
+                        <a href="/shop" class="text-xl font-semibold hover:text-red-500 duration-300">Shop</a>
+                    </li>
+                    <li class="my-5">
+                        <a href="/about" class="text-xl font-semibold hover:text-red-500 duration-300">About Us</a>
+                    </li>
+                    <li class="my-5">
+                        <a href="#" class="text-xl font-semibold hover:text-red-500 duration-300">Cart</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="flex flex-row phone:max-tablet:hidden">
+            <ul class="flex flex-row gap-8">
+                <li class="p-4"><a href="/shop">Shop</a></li>
+                <li class="p-4"><a href="/about">About Us</a></li>
+            </ul>
+            <div
+                class="shrink-0 w-px border border-solid bg-neutral-500 border-neutral-500 h-[22px] my-auto mx-10"
+            ></div>
+            <div class="flex flex-row p-4 gap-10">
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/b53ad79a5e4ea34706fc375724ee506199b29340c27f09c40ae777a95cc73c28?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="shrink-0 self-start border border-white border-solid aspect-square fill-black stroke-[0.75px] stroke-white w-[19px]"
+                />
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/324b097b3a26f24da080c52561d900b13bf05f0d28848eed44fbb39ad816c1d1?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="shrink-0 self-start aspect-square w-[21px]"
+                />
+                <img
+                    loading="lazy"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/1f730e5942965a07e5a2ab20fe941c2b09c71126a0ad6a759c38c6b0eaefa36d?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                    alt="Image description"
+                    class="shrink-0 self-start w-5 border border-white border-solid aspect-[0.95] fill-black stroke-[1px] stroke-white"
+                />
+            </div>
+        </div>
     </div>
-  </div>
 </header>
+</section>
 <!-- Navigation Bar -->
 
-    <div class="tablet:hidden">
-      <img
-          src="https://file.hstatic.net/200000103143/file/hero-module-2880-x-1040_a09ac3b897304bd18a9d2c5f1b97c268.jpg"
-          class="w-full"
-          alt="Image 1"
-        />
-        <div
-          class="text text-white text-center bg-opacity-60 bg-black p-2 phone:max-tablet:hidden absolute bottom-8 w-full"
-        >
-          Red Velvet x PANDORA
-        </div>
-    </div>
-    <div class="slideshow-container relative my-10 col phone:max-tablet:hidden  ">
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade phone:w-full tablet:w-full">
-        <div class="numbertext"></div>
+
+<style>
+    .slideshow-container {
+        display: flex;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .mySlides {
+        flex: 0 0 auto;
+    }
+    .fade {
+        transition: opacity 3s ease-in-out;
+    }
+</style>
+
+<section class="grid justify-center">
+    <!-- <div class="max-w-[1200px] tablet:mx-auto phone:mx-[10px]">
         <img
-          src="./asset/banner/slide1.webp"
-          class="w-full h-full"
-          alt="Image 1"
+            src="https://file.hstatic.net/200000103143/file/1640_x_250_1_92795b1e4d2148c399d851f7dce7c7b7.gif"
+            class="tablet:w-full tablet:h-[500px] phone:w-full phone:h-[200px]"
+            alt="Image 1"
         />
-        <div
-          class="text text-white text-center bg-opacity-60 bg-black p-2 phone:max-tablet:hidden absolute bottom-8 w-full "
+    </div> -->
+    <div class="max-w-[1300px] tablet:mx-auto phone:mx-[10px]">
+        <video
+            class="w-full h-auto focus:outline-none"
+            muted
+            autoplay
+            loop 
         >
-          Be Love
-        </div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext"></div>
-        <img
-          src="./asset/banner/slide2.webp"
-          class="w-full"
-          alt="Image 1"
-        />
-        <div
-          class="text text-white text-center bg-opacity-60 bg-black p-2 phone:max-tablet:hidden absolute bottom-8 w-full"
+        <source
+            type="video/mp4"
+            src="/vid/Video_Tiffani.mp4"
         >
-          Red Velvet x PANDORA
-        </div>
-      </div>
-
-      <!-- ... (similarly for other slides) ... -->
-
-      <!-- Next and previous buttons -->
-       
-      <a
-        class="prev cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out rounded-r-md hover:bg-black hover:text-white"
-        onclick="plusSlides(-1)"
-        >&#10094;</a
-      >
-      <a
-        class="next cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out hover:bg-black hover:text-white rounded-l-md"
-        onclick="plusSlides(1)"
-        >&#10095;</a
-      >
+        </video>
     </div>
-
-    <!-- The dots/circles -->
-    <div class="text-center">
-      <span
-        class="dot cursor-pointer tablet:h-4 tablet:w-4 m-2 bg-gray-300 rounded-full inline-block transition duration-600 ease hover:bg-gray-700 phone:h-2 phone:w-2 "
-      ></span>
-      <span
-        class="dot cursor-pointer tablet:h-4 tablet:w-4 m-2 bg-gray-300 rounded-full inline-block transition duration-600 ease hover:bg-gray-700 phone:h-2 phone:w-2"
-      ></span>
-      <!-- ... (similarly for other dots) ... -->
-    </div>
-
-    <main>
-      <section
-        class="flex gap-5 mt-14 font-medium max-md:flex-wrap max-md:mt-10 max-md:mr-1.5 max-md:max-w-full my-10 col"
-      >
-        <h2 class="flex-auto tablet:text-4xl phone:text-2xl leading-10 text-black ">
-          Shop The Latest
-        </h2>
-        <a
-          href="shop.html"
-          class="my-auto tablet:text-xl leading-7 capitalize text-stone-500 phone:text-sm"
-        >
-          View All
-        </a>
-      </section>
-  
-      <!-- Product Grid -->
-      <section class="grid col justify-items-center phone:grid-cols-2 phone:max-tablet:justify-center tablet:grid-cols-3 tablet:col-span-3 laptop:col-span-4 laptop:grid-cols-4">
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product.html">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-[12px] text-center desktop:text-[18px]">         
-                <font color="#a28b68">$20,000</font>
-            </h4>
-          </a>
-        </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product.html">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-center text-[12px] desktop:text-[18px]">
-              <font color="#a28b68">$20,000</font>
-            </h4>
-          </a>
-        </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-[12px] text-center desktop:text-[18px]">         
-              <font color="#a28b68">$20,000</font>
-          </h4>          
-        </a>
-        </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product.html">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product4.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-[12px] text-center desktop:text-[18px]">         
-              <font color="#a28b68">$20,000</font>
-          </h4>          
-        </a>
-        </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product.html">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product5.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-[12px] text-center desktop:text-[18px]">         
-              <font color="#a28b68">$20,000</font>
-          </h4>          
-        </a>
-        </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product.html">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product1.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-[12px] text-center desktop:text-[18px]">         
-              <font color="#a28b68">$20,000</font>
-          </h4>          
-        </a>
-        </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product.html">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product2.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-[12px] text-center desktop:text-[18px]">         
-              <font color="#a28b68">$20,000</font>
-          </h4>          
-        </a>
-        </div>
-        <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px]">
-          <a href="product.html">
-            <div class="rounded-lg phone:h-[180px] phone:w-[180px] tablet:h-[330px] tablet:w-[330px] laptop:h-[300px] laptop:w-[300px] desktop:h-[400px] desktop:w-[400px] h-[300px] w-[300px] bg-[url('https://rawcdn.githack.com/quocanle-study/WebDesignProject/1faf2e03ad8f063b4c81b1ae92408c913f1c24cb/asset/product/product3.webp')] bg-cover bg-center">
-            </div>
-            <h3 class="text-bold text-xl  mt-3 text-center phone:text-[13px] desktop:text-2xl">Product</h3>
-            <h4 class="text-[12px] text-center desktop:text-[18px]">         
-              <font color="#a28b68">$20,000</font>
-          </h4>          
-        </a>
-        </div>
-      </section>
-    </main>
-   
     
-
-    <section class="col phone:max-tablet:hidden h-[85vh] desktop:h-[600px] flex justify-center items-center bg-black">
-      <div class="flex">
-        <img src="./asset/product/thietkebanner.jpg" alt="" class="  tablet:h-[80%] desktop:h-[100%]">
-        <div class="flex justify-center items-center w-[55rem] h-[35.25rem] bg-white">
-          <div class="flex flex-col text-center space-y-5">
-            <span id="fontgucci" class="text-6xl font-semibold">Sale up to 30% !</span>
-            <span class="text-base">"Give her a ring" and make things really special!</span>
-          </div>
+    <!-- 3 banner -->
+    <div class="slideshow-container relative tablet:mt-3 phone:mt-2 tablet:mx-auto max-w-[1300px] tablet:gap-7 phone:gap-2 phone:mx-[10px] sha">
+        <div class="mySlides fade">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://asset.swarovski.com/c_crop,g_xy_center,w_11455,h_3877,x_5728,y_3892/f_auto,q_auto,dpr_2.0/swa-cms/LOOKBOOKSS24_LOOK06-1_OF_GL_72DPI_RGB_SALE.jpg')]"></div>
         </div>
+        <div class="mySlides fade ">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://asset.swarovski.com/images/c_crop,g_xy_center,w_11348,h_3842,x_5669,y_4529/dpr_2.0,f_auto,q_auto,c_lfill,w_1449,h_830/swa-cms/LOOKBOOKSS24_LOOK06-2_OF_GL_72DPI_RGB_EXT2/.jpg')]"></div>
+        </div>
+        <div class="mySlides fade ">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://asset.swarovski.com/images/c_crop,g_xy_center,w_6649,h_2251,x_3325,y_1126/dpr_2.0,f_auto,q_auto,c_lfill,w_1449,h_830/swa-cms/2024_MOL-MILAN_ARCHSHOT_VISUAL_FUTURE-HISTORY-2_GL_72DPI_RGB/.jpg')]"></div>
+        </div>
+        <div class="mySlides fade ">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://media.tiffany.com/is/image/tiffanydm/2024-TITAN-HP-Stories-1?$tile$&wid=736&hei=920&fmt=webp')]"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://cms-live-rc.pandora.net/resource/responsive-image/2994966/m66-feature-module/lg/5/q124-editorial-aprilmay-mostloved-model-summercelebration-twoimageoverlap.jpg')]"></div>
+        </div>
+        <a class="prev cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out rounded-r-md hover:bg-black hover:text-white select-none" id="prev">&#10094;</a>
+        <a class="next cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out hover:bg-black hover:text-white rounded-l-md select-none" id="next">&#10095;</a>
       </div>
+      
+    <main>
+        <section class="grid justify-center">
+            <section
+                class="flex justify-between mt-14 font-medium my-10 mx-auto max-w-[1200px] phone:w-[calc(400px-20px)] tablet:w-[calc(1000px-100px)] laptop:w-[calc(1200px-50px)]"
+            >
+                <h2 class="font-roboto flex-auto tablet:text-4xl phone:text-2xl leading-10 text-black">
+                    Shop The Latest
+                </h2>
+                <a
+                    href="/shop"
+                    class="font-roboto my-auto tablet:text-xl leading-7 capitalize text-stone-500 phone:text-sm"
+                >
+                    View All
+                </a>
+            </section>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="grid justify-center">
+            <section
+                class="grid phone:grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-4 mx-auto max-w-[1200px] gap-4 px-4"
+            >
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=2">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/153/gvctxmy000059-vong-tay-vang-18k-dinh-da-citrine-pnj-sac-xuan-1.png" alt="18K Gold Bracelet with Citrine PNJ Spring CTXMY000059" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Gold Bracelet with Citrine PNJ Spring CTXMY000059</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$30</font>
+                        </h4>
+                    </a>
+                </div>
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=3">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/69/gvrbxmy000180-vong-tay-vang-18k-dinh-da-ruby-pnj-sac-xuan-01.png" alt="18K Gold Bracelet with Ruby PNJ Spring RBXMY000180" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Gold Bracelet with Ruby PNJ Spring RBXMY000180</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$45</font>
+                        </h4>
+                    </a>
+                </div>
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=4">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/140/gvxmxmw000167-vong-tay-vang-trang-y-18k-dinh-da-cz-pnj-1.png" alt="18K Italian White Gold Bracelet with CZ PNJ XMXMW000167" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Italian White Gold Bracelet with CZ PNJ XMXMW000167</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$20</font>
+                        </h4>
+                    </a>
+                </div>
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=6">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/205/sp-gvxm00y000034-vong-tay-vang-18k-dinh-da-cz-pnj-1.png" alt="18K Gold Bracelet with CZ PNJ XM00Y000034" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Gold Bracelet with CZ PNJ XM00Y000034</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$20</font>
+                        </h4>
+                    </a>
+                </div>
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=7">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/135/gvxmxmw000062-vong-tay-vang-trang-10k-dinh-da-ecz-pnj-1.png" alt="10K White Gold Bracelet with ECZ PNJ Pure Flower XMXMW000062" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">10K White Gold Bracelet with ECZ PNJ Pure Flower XMXMW000062</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$25</font>
+                        </h4>
+                    </a>
+                </div>
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=8">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/211/sp-gnxmxmw005164-nhan-vang-trang-14k-dinh-da-ecz-pnj-1.png" alt="14K White Gold Ring with ECZ PNJ XMXMW005164" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">14K White Gold Ring with ECZ PNJ XMXMW005164</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$20</font>
+                        </h4>
+                    </a>
+                </div>
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=9">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/211/sp-gnxmxmw005163-nhan-vang-14k-dinh-da-ecz-pnj-1.png" alt="14K White Gold Ring with ECZ PNJ XMXMW005163" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">14K White Gold Ring with ECZ PNJ XMXMW005163</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$30</font>
+                        </h4>
+                    </a>
+                </div>
+                
+                <div class="mb-32 phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px] shadow-md">
+                    <a href="/product?id=10">
+                        <div class="bg-gray-100 rounded-lg phone:h-[180px] phone:w-[180px] tablet:w-[260px] tablet:h-[260px]">
+                            <img src="https://cdn.pnj.io/images/detailed/204/sp-gnct00y000078-nhan-nam-vang-18k-dinh-da-citrine-pnj-1.png" alt="18K Gold Men&#39;s Ring with Citrine PNJ CT00Y000078" class="rounded w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-bold font-roboto phone:text-[13px] tablet:text-[16px] text-center mt-3">18K Gold Men&#39;s Ring with Citrine PNJ CT00Y000078</h3>
+                        <h4 class="text-center font-roboto phone:text-[11px] tablet:text-[15px] desktop:text-[15px]">
+                            <font color="#a28b68">$60</font>
+                        </h4>
+                    </a>
+                </div>
+                
+            </section>
+        </section>
+    </main>
+    <section class="tablet:grid tablet:justify-center">
+        <div class="phone:mx-auto tablet:mx-[200px] max-w-[1200px] phone:w-full phone:h-[200px] tablet:w-[800px] tablet:h-[350px] laptop:w-[1000px] laptop:h-[500px] bg-[url(https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center">
+        </div>
     </section>
+</section>
 
 
 
 
-    <!-- Footer -->
-    <footer class="col border-t-2 mt-60 phone:max-tablet:justify-center">
-      <section class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex">
+
+<!-- Footer -->
+<section class="grid justify-items-center ">
+<footer class=" border-t-2 mt-60 phone:max-tablet:justify-center tablet:mx-[200px] max-w-[1200px]">
+    <section class="grid justify-between mx-10 phone:max-tablet:grid-cols-1 phone:grid-cols-1 tablet:flex">
         <div class="flex gap-5 mt-10 phone:flex-col">
-          <div>
-            <a href="" class="text-gray-500 mr-10">CONTACT</a>
-            <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
-            <a href="" class="text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
-          </div>
-      </div>
-          <div class="border-b-2 border-black">
-            <div class="flex justify-between gap-20 mt-7 mb-2">
-              <input class="text-black" type="text" placeholder="Give an email, get the newsletter.">
-              <img 
-              class="cursor-pointer" 
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&" alt="" />
+            <div>
+                <a href="" class="text-gray-500 mr-10">CONTACT</a>
+                <a href="" class="text-gray-500 mr-10">TERMS OF SERVICES</a>
+                <a href="" class="text-gray-500 mr-10 ">SHIPPING AND RETURNS</a>
             </div>
-          </div>
-      </section>
-      <section class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10 ">
+        </div>
+        <div class="border-b-2 border-black">
+            <div class="flex justify-between gap-20 mt-7 mb-2">
+                <input class="text-black" type="text" placeholder="Give an email, get the newsletter.">
+                <img
+                        class="cursor-pointer"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/c4a81552353ddc6cf542340113428cce528e4e8dbfd18c5b359edfe4bba9e08f?apiKey=e8ca62b583f64a60ba17a0d16e44846a&"
+                        alt=""/>
+            </div>
+        </div>
+    </section>
+    <section class="phone:grid-rows-1 phone:grid tablet:flex justify-between mx-10 my-10 ">
         <div>
-          © 2024 LBJ.
-          <a href="#" class="text-gray-500">Terms of use</a>
-          and
-          <a href="#" class="text-gray-500">Privacy Policy</a>
+            © 2024 LBJ.
+            <a href="#" class="text-gray-500">Terms of use</a>
+            and
+            <a href="#" class="text-gray-500">Privacy Policy</a>
         </div>
         <div class="flex gap-10 mx-10 phone:mt-5 tablet:mt-0 phone:max-tablet:justify-center">
-          <a href="#">
-            <img class="size-[15px]" src="/asset/linkedin-big-logo.png" alt="In Icon">
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100006106118260" target="_blank">
-            <img class="size-[15px]" src="/asset/facebook (1).png" alt="Facebook Icon">
-          </a>
-          <a href="#">
-            <img class="size-[15px]" src="/asset/instagram.png" alt="Instagram Icon">
-          </a>
-          <a href="#">
-            <img class="size-[15px]" src="/asset/twitter.png" alt="Twitter Icon">
-          </a>
-      </section>
-    </footer>  
-  <!-- Footer -->
-    <script type="module" src="/src/scripts/menu.js"></script>
-    <script type="module" src="/src/scripts/slide.js"></script>
-    <script type="module" src="/src/scripts/main.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7QBN2WL4D"></script>
-    <script type="module" src="/src/scripts/gganalytics.js"></script>
-  </body>
-</html>
+            <a href="#">
+                <img class="size-[15px]" src="/asset/linkedin-big-logo.png" alt="In Icon">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100006106118260" target="_blank">
+                <img class="size-[15px]" src="/asset/facebook (1).png" alt="Facebook Icon">
+            </a>
+            <a href="#">
+                <img class="size-[15px]" src="/asset/instagram.png" alt="Instagram Icon">
+            </a>
+            <a href="#">
+                <img class="size-[15px]" src="/asset/twitter.png" alt="Twitter Icon">
+            </a>
+        </div>
+    </section>
+</footer>
+</section>
+<!-- Footer -->
 
+
+<script type="module" src="./src/scripts/main.js"></script>
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J7QBN2WL4D"></script>
+<script>
+    // OLD code is: src/scripts/gganalytics.js
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-J7QBN2WL4D');
+</script>
+
+<!-- Additional scripts customized for specific screens -->
+<script type="module" src="./src/scripts/newFromApp/menu.js"></script>
+<script type="module" src="./src/scripts/newFromApp/slide.js"></script>
+</body>
+</html>
