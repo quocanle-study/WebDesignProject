@@ -1,5 +1,7 @@
 # LBJ (Luxury Boys Jewelry) Online Shop
 
+![Home page screenshot](/content/homepage.png)
+
 ## Overview
 Welcome to the **LBJ (Luxury Boys Jewelry) Online Shop**. This is a high-end e-commerce platform designed to offer an exclusive selection of jewelry. Our mission is to provide a seamless shopping experience for those who seek luxury and elegance.
 
@@ -127,3 +129,6 @@ node prisma/seed.js
 
 ## Contact
 * Email: an.le22020016@vnuk.edu.vn
+
+## Video demo
+[![Watch the video](https://img.youtube.com/vi/1dIoq4VAg94/maxresdefault.jpg)](https://youtu.be/1dIoq4VAg94)
