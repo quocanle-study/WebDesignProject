@@ -48,7 +48,7 @@ const getHomepageShuffle10 = async (req, res) => {
         const shuffledIds = allProductIds.sort(() => 0.5 - Math.random());
 
         // Step 3: Select the first 10 IDs
-        const selectedIds = shuffledIds.slice(0, 10).map((product) => product.id);
+        const selectedIds = shuffledIds.slice(0, 8).map((product) => product.id);
 
         // Step 4: Fetch the details of these 10 products
         const products = await prisma.product.findMany({

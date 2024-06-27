@@ -8,7 +8,7 @@ const getShop = async (req, res) => {
 
     const { page = 1, category, search } = req.query;
     const currentPage = parseInt(page);
-    const itemsPerPage = 8;
+    const itemsPerPage = 9;
 
     let where = {};
 
