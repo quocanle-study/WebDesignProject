@@ -1,35 +1,45 @@
-// Slideshow javascript
-let slideIndex = 1;
-showSlides(slideIndex);
+document.addEventListener("DOMContentLoaded", function() {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll(".mySlides");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
 
-// Next/previous controls
-function plusSlides(n) {
-    showSlides((slideIndex += n));
-}
+    // Show the first 3 slides
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (let i = 0; i < 3; i++) {
+            let currentIndex = (slideIndex + i) % slides.length;
+            slides[currentIndex].style.display = "block";
+        }
+    }
 
-// Thumbnail image controls
-// eslint-disable-next-line
-function currentSlide(n) {
-    showSlides((slideIndex = n));
-}
+    showSlides(); // Initial display of slides
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName('mySlides');
-    let dots = document.getElementsByClassName('dot');
-    if (n > slides.length) {
-        slideIndex = 1;
+    // Automatic slide change
+    function autoSlides() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlides();
     }
-    if (n < 1) {
-        slideIndex = slides.length;
+
+    let slideInterval = setInterval(autoSlides, 5000); // Change slide every 3 seconds
+
+    // Next/previous controls
+    function plusSlides(n) {
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        showSlides();
     }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', '');
-    }
-    slides[slideIndex - 1].style.display = 'block';
-}
-document.getElementById('prev').addEventListener('click', () => plusSlides(-1));
-document.getElementById('next').addEventListener('click', () => plusSlides(1));
+
+    prevButton.addEventListener("click", function() {
+        plusSlides(-1);
+        clearInterval(slideInterval); // Stop automatic sliding when button is clicked
+        slideInterval = setInterval(autoSlides, 5000); // Restart automatic sliding
+    });
+
+    nextButton.addEventListener("click", function() {
+        plusSlides(1);
+        clearInterval(slideInterval); // Stop automatic sliding when button is clicked
+        slideInterval = setInterval(autoSlides, 5000); // Restart automatic sliding
+    });
+});

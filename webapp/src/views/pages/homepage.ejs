@@ -1,54 +1,61 @@
+<style>
+    .slideshow-container {
+        display: flex;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .mySlides {
+        flex: 0 0 auto;
+    }
+    .fade {
+        transition: opacity 3s ease-in-out;
+    }
+</style>
+
 <section class="grid justify-center">
-    <div class="tablet:hidden">
+    <!-- <div class="max-w-[1200px] tablet:mx-auto phone:mx-[10px]">
         <img
-            src="https://file.hstatic.net/200000103143/file/hero-module-2880-x-1040_a09ac3b897304bd18a9d2c5f1b97c268.jpg"
-            class="w-full"
+            src="https://file.hstatic.net/200000103143/file/1640_x_250_1_92795b1e4d2148c399d851f7dce7c7b7.gif"
+            class="tablet:w-full tablet:h-[500px] phone:w-full phone:h-[200px]"
             alt="Image 1"
         />
-        <div class="text text-white text-center bg-opacity-60 bg-black p-2 phone:max-tablet:hidden absolute bottom-8 w-full">
-            Red Velvet x PANDORA
-        </div>
+    </div> -->
+    <div class="max-w-[1300px] tablet:mx-auto phone:mx-[10px]">
+        <video
+            class="w-full h-auto focus:outline-none"
+            muted
+            autoplay
+            loop 
+        >
+        <source
+            type="video/mp4"
+            src="/vid/Video_Tiffani.mp4"
+        >
+        </video>
     </div>
-    <div class="slideshow-container relative my-10 phone:max-tablet:hidden mx-auto max-w-[1200px]">
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade phone:w-full tablet:w-full">
-            <div class="numbertext"></div>
-            <img
-                src="/asset/banner/slide1.webp"
-                class="w-full h-full max-w-[1200px]"
-                alt="Image 1"
-            />
-            <div class="text text-white text-center bg-opacity-60 bg-black p-2 phone:max-tablet:hidden absolute bottom-8 w-full">
-                Be Love
-            </div>
-        </div>
-
+    
+    <!-- 3 banner -->
+    <div class="slideshow-container relative tablet:mt-3 phone:mt-2 tablet:mx-auto max-w-[1300px] tablet:gap-7 phone:gap-2 phone:mx-[10px] sha">
         <div class="mySlides fade">
-            <div class="numbertext"></div>
-            <img
-                src="/asset/banner/slide2.webp"
-                class="w-full"
-                alt="Image 1"
-            />
-            <div class="text text-white text-center bg-opacity-60 bg-black p-2 phone:max-tablet:hidden absolute bottom-8 w-full">
-                Red Velvet x PANDORA
-            </div>
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://asset.swarovski.com/c_crop,g_xy_center,w_11455,h_3877,x_5728,y_3892/f_auto,q_auto,dpr_2.0/swa-cms/LOOKBOOKSS24_LOOK06-1_OF_GL_72DPI_RGB_SALE.jpg')]"></div>
         </div>
-
-        <!-- ... (similarly for other slides) ... -->
-
-        <!-- Next and previous buttons -->
-        <a
-            class="prev cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out rounded-r-md hover:bg-black hover:text-white select-none"
-            id="prev"
-        >&#10094;</a>
-        <a
-            class="next cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out hover:bg-black hover:text-white rounded-l-md select-none"
-            id="next"
-        >&#10095;</a>
-    </div>
-
-    <!-- The dots/circles -->
+        <div class="mySlides fade ">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://asset.swarovski.com/images/c_crop,g_xy_center,w_11348,h_3842,x_5669,y_4529/dpr_2.0,f_auto,q_auto,c_lfill,w_1449,h_830/swa-cms/LOOKBOOKSS24_LOOK06-2_OF_GL_72DPI_RGB_EXT2/.jpg')]"></div>
+        </div>
+        <div class="mySlides fade ">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://asset.swarovski.com/images/c_crop,g_xy_center,w_6649,h_2251,x_3325,y_1126/dpr_2.0,f_auto,q_auto,c_lfill,w_1449,h_830/swa-cms/2024_MOL-MILAN_ARCHSHOT_VISUAL_FUTURE-HISTORY-2_GL_72DPI_RGB/.jpg')]"></div>
+        </div>
+        <div class="mySlides fade ">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://media.tiffany.com/is/image/tiffanydm/2024-TITAN-HP-Stories-1?$tile$&wid=736&hei=920&fmt=webp')]"></div>
+        </div>
+        <div class="mySlides fade">
+          <div class="tablet:w-[480px] tablet:h-[250px] phone:w-[170px] phone:h-[110px] bg-cover bg-center bg-[url('https://cms-live-rc.pandora.net/resource/responsive-image/2994966/m66-feature-module/lg/5/q124-editorial-aprilmay-mostloved-model-summercelebration-twoimageoverlap.jpg')]"></div>
+        </div>
+        <a class="prev cursor-pointer absolute top-1/2 transform -translate-y-1/2 left-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out rounded-r-md hover:bg-black hover:text-white select-none" id="prev">&#10094;</a>
+        <a class="next cursor-pointer absolute top-1/2 transform -translate-y-1/2 right-0 p-4 text-black font-bold text-xl transition duration-600 ease-in-out hover:bg-black hover:text-white rounded-l-md select-none" id="next">&#10095;</a>
+      </div>
+      
     <main>
         <section class="grid justify-center">
             <section
@@ -87,8 +94,8 @@
             </section>
         </section>
     </main>
-    <section class="grid justify-center">
-        <div class="phone:mx-[20px] tablet:mx-[200px] max-w-[1200px] phone:w-full phone:h-[200px] tablet:w-[800px] tablet:h-[350px] laptop:w-[1000px] laptop:h-[500px] bg-[url(https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center">
+    <section class="tablet:grid tablet:justify-center">
+        <div class="phone:mx-auto tablet:mx-[200px] max-w-[1200px] phone:w-full phone:h-[200px] tablet:w-[800px] tablet:h-[350px] laptop:w-[1000px] laptop:h-[500px] bg-[url(https://images.unsplash.com/photo-1531303435785-3853ba035cda?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center">
         </div>
     </section>
 </section>
